@@ -1,27 +1,27 @@
 <svg version="1.1" id="Camada_1" xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;" xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-1291 1292.1 252.6 252.6" style="enable-background:new -1291 1292.1 252.6 252.6;" xml:space="preserve">
 <style type="text/css">
-	.ladsvg-6352-st0{fill:#F5F4F4;}
-	.ladsvg-6352-st1{fill:#2D2E27;}
+	.A{fill:#F5F4F4;}
+	.B{fill:#2D2E27;}
 </style>
 <switch>
 	
 	<g i:extraneous="self">
-		<rect x="-1291" y="1292.2" class="ladsvg-6352-st0" width="252.6" height="252.6"></rect>
-		<rect x="-1164.7" y="1292.2" class="ladsvg-6352-st0" width="63.6" height="62.7"></rect>
-		<rect x="-1228.3" y="1354.9" class="ladsvg-6352-st0" width="63.6" height="63.6"></rect>
-		<rect x="-1291" y="1418.5" class="ladsvg-6352-st0" width="62.7" height="63.6"></rect>
-		<rect x="-1101.1" y="1354.9" class="ladsvg-6352-st0" width="62.7" height="63.6"></rect>
-		<rect x="-1164.7" y="1418.5" class="ladsvg-6352-st0" width="63.6" height="63.6"></rect>
-		<rect x="-1228.3" y="1482" class="ladsvg-6352-st0" width="63.6" height="62.7"></rect>
-		<rect x="-1101.1" y="1482" class="ladsvg-6352-st0" width="62.7" height="62.7"></rect>
-		<rect x="-1101.1" y="1418.5" class="ladsvg-6352-st1" width="62.7" height="63.6"></rect>
-		<rect x="-1164.7" y="1482" class="ladsvg-6352-st1" width="63.6" height="62.7"></rect>
-		<rect x="-1101.1" y="1292.2" class="ladsvg-6352-st1" width="62.7" height="62.7"></rect>
-		<rect x="-1164.7" y="1354.9" class="ladsvg-6352-st1" width="63.6" height="63.6"></rect>
-		<rect x="-1228.3" y="1418.5" class="ladsvg-6352-st1" width="63.6" height="63.6"></rect>
-		<rect x="-1291" y="1482" class="ladsvg-6352-st1" width="62.7" height="62.7"></rect>
-		<rect x="-1228.3" y="1292.2" class="ladsvg-6352-st1" width="63.6" height="62.7"></rect>
-		<rect x="-1291" y="1354.9" class="ladsvg-6352-st1" width="62.7" height="63.6"></rect>
+		<rect x="-1291" y="1292.2" class="A" width="252.6" height="252.6"></rect>
+		<rect x="-1164.7" y="1292.2" class="A" width="63.6" height="62.7"></rect>
+		<rect x="-1228.3" y="1354.9" class="A" width="63.6" height="63.6"></rect>
+		<rect x="-1291" y="1418.5" class="A" width="62.7" height="63.6"></rect>
+		<rect x="-1101.1" y="1354.9" class="A" width="62.7" height="63.6"></rect>
+		<rect x="-1164.7" y="1418.5" class="A" width="63.6" height="63.6"></rect>
+		<rect x="-1228.3" y="1482" class="A" width="63.6" height="62.7"></rect>
+		<rect x="-1101.1" y="1482" class="A" width="62.7" height="62.7"></rect>
+		<rect x="-1101.1" y="1418.5" class="B" width="62.7" height="63.6"></rect>
+		<rect x="-1164.7" y="1482" class="B" width="63.6" height="62.7"></rect>
+		<rect x="-1101.1" y="1292.2" class="B" width="62.7" height="62.7"></rect>
+		<rect x="-1164.7" y="1354.9" class="B" width="63.6" height="63.6"></rect>
+		<rect x="-1228.3" y="1418.5" class="B" width="63.6" height="63.6"></rect>
+		<rect x="-1291" y="1482" class="B" width="62.7" height="62.7"></rect>
+		<rect x="-1228.3" y="1292.2" class="B" width="63.6" height="62.7"></rect>
+		<rect x="-1291" y="1354.9" class="B" width="62.7" height="63.6"></rect>
 	</g>
 </switch>
 

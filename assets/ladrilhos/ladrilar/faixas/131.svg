@@ -2,26 +2,26 @@
                   <div id="svg-corner" class="svg">
             <svg version="1.1" id="Camada_1" xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;" xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-1291 1292.1 252.6 252.6" style="enable-background:new -1291 1292.1 252.6 252.6;" xml:space="preserve">
 <style type="text/css">
-	.ladsvg-6583-st0{fill:#2D2E27;}
-	.ladsvg-6583-st1{fill:#7B7970;}
-	.ladsvg-6583-st2{fill:#F6F6F6;}
+	.A{fill:#2D2E27;}
+	.B{fill:#7B7970;}
+	.C{fill:#F6F6F6;}
 </style>
 <switch>
 	
 	<g i:extraneous="self">
-		<rect x="-1291" y="1292.1" class="ladsvg-6583-st0" width="253.9" height="253.1"></rect>
-		<polygon class="ladsvg-6583-st0" points="-1037.1,1355.3 -1100.5,1418.6 -1037.1,1481.9 		"></polygon>
-		<polygon class="ladsvg-6583-st0" points="-1100.5,1418.6 -1164,1355.3 -1227.5,1418.6 -1164,1481.9 		"></polygon>
-		<polygon class="ladsvg-6583-st0" points="-1164,1481.9 -1227.5,1545.2 -1100.5,1545.2 		"></polygon>
-		<polygon class="ladsvg-6583-st1" points="-1037.1,1505.8 -1076.6,1505.8 -1076.6,1545.2 -1061.4,1545.2 -1061.4,1521 -1037.1,1521 		"></polygon>
-		<polygon class="ladsvg-6583-st1" points="-1037.1,1316.2 -1266.9,1316.2 -1266.9,1545.2 -1251.6,1545.2 -1251.6,1331.4 -1037.1,1331.4 		"></polygon>
-		<rect x="-1061.4" y="1521" class="ladsvg-6583-st0" width="24.3" height="24.1"></rect>
-		<polygon class="ladsvg-6583-st1" points="-1100.5,1418.6 -1164,1481.9 -1132.3,1513.4 -1100.5,1481.9 -1037.1,1481.9 		"></polygon>
-		<polygon class="ladsvg-6583-st1" points="-1037.1,1355.3 -1100.5,1355.3 -1132.3,1386.9 -1100.5,1418.6 		"></polygon>
-		<polygon class="ladsvg-6583-st1" points="-1164,1481.9 -1227.5,1418.6 -1227.5,1481.9 -1195.8,1513.4 		"></polygon>
-		<polygon class="ladsvg-6583-st2" points="-1037.1,1481.9 -1100.5,1481.9 -1132.3,1513.4 -1100.5,1545.2 -1076.6,1545.2 -1076.6,1505.8 
+		<rect x="-1291" y="1292.1" class="A" width="253.9" height="253.1"></rect>
+		<polygon class="A" points="-1037.1,1355.3 -1100.5,1418.6 -1037.1,1481.9 		"></polygon>
+		<polygon class="A" points="-1100.5,1418.6 -1164,1355.3 -1227.5,1418.6 -1164,1481.9 		"></polygon>
+		<polygon class="A" points="-1164,1481.9 -1227.5,1545.2 -1100.5,1545.2 		"></polygon>
+		<polygon class="B" points="-1037.1,1505.8 -1076.6,1505.8 -1076.6,1545.2 -1061.4,1545.2 -1061.4,1521 -1037.1,1521 		"></polygon>
+		<polygon class="B" points="-1037.1,1316.2 -1266.9,1316.2 -1266.9,1545.2 -1251.6,1545.2 -1251.6,1331.4 -1037.1,1331.4 		"></polygon>
+		<rect x="-1061.4" y="1521" class="A" width="24.3" height="24.1"></rect>
+		<polygon class="B" points="-1100.5,1418.6 -1164,1481.9 -1132.3,1513.4 -1100.5,1481.9 -1037.1,1481.9 		"></polygon>
+		<polygon class="B" points="-1037.1,1355.3 -1100.5,1355.3 -1132.3,1386.9 -1100.5,1418.6 		"></polygon>
+		<polygon class="B" points="-1164,1481.9 -1227.5,1418.6 -1227.5,1481.9 -1195.8,1513.4 		"></polygon>
+		<polygon class="C" points="-1037.1,1481.9 -1100.5,1481.9 -1132.3,1513.4 -1100.5,1545.2 -1076.6,1545.2 -1076.6,1505.8 
 			-1037.1,1505.8 		"></polygon>
-		<polygon class="ladsvg-6583-st2" points="-1164,1355.3 -1132.3,1386.9 -1100.5,1355.3 -1037.1,1355.3 -1037.1,1331.4 -1251.6,1331.4 
+		<polygon class="C" points="-1164,1355.3 -1132.3,1386.9 -1100.5,1355.3 -1037.1,1355.3 -1037.1,1331.4 -1251.6,1331.4 
 			-1251.6,1545.2 -1227.5,1545.2 -1195.8,1513.4 -1227.5,1481.9 -1227.5,1418.6 		"></polygon>
 	</g>
 </switch>

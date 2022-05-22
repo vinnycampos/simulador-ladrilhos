@@ -1,15 +1,15 @@
 <svg version="1.1" id="Camada_1" xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;" xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-1291 1292.1 252.6 252.6" style="enable-background:new -1291 1292.1 252.6 252.6;" xml:space="preserve">
 <style type="text/css">
-	.ladsvg-6441-st0{fill:#C2BFC1;}
-	.ladsvg-6441-st1{fill:#7B7970;}
+	.A{fill:#C2BFC1;}
+	.B{fill:#7B7970;}
 </style>
 <switch>
 	
 	<g i:extraneous="self">
 		<g id="Camada_1_1_">
 		</g>
-		<polygon class="ladsvg-6441-st0" points="-1291,1292.2 -1038.4,1544.8 -1291,1544.8 		"></polygon>
-		<polygon class="ladsvg-6441-st1" points="-1038.4,1292.2 -1291,1292.2 -1038.4,1544.8 		"></polygon>
+		<polygon class="A" points="-1291,1292.2 -1038.4,1544.8 -1291,1544.8 		"></polygon>
+		<polygon class="B" points="-1038.4,1292.2 -1291,1292.2 -1038.4,1544.8 		"></polygon>
 	</g>
 </switch>
 

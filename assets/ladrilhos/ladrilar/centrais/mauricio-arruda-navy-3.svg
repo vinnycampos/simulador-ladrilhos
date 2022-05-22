@@ -1,16 +1,16 @@
 <svg version="1.1" id="Camada_1" xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;" xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-1291 1292.1 252.6 252.6" style="enable-background:new -1291 1292.1 252.6 252.6;" xml:space="preserve">
 <style type="text/css">
-	.ladsvg-1559-st0{fill:#F6F6F6;}
-	.ladsvg-1559-st1{fill:#2D2E27;}
+	.A{fill:#F6F6F6;}
+	.B{fill:#2D2E27;}
 </style>
 <switch>
 	
 	<g i:extraneous="self">
-		<polygon class="ladsvg-1559-st0" points="-1038,1292.2 -1038,1544.7 -1291.8,1292.2 -1187.4,1292.2 		"></polygon>
-		<polygon class="ladsvg-1559-st1" points="-1038,1544.7 -1291.8,1544.7 -1291.8,1292.2 -1164.9,1418.4 		"></polygon>
-		<polygon class="ladsvg-1559-st1" points="-1038,1475.8 -1222.4,1292.4 -1244.4,1292.4 -1038,1497.8 		"></polygon>
-		<polygon class="ladsvg-1559-st1" points="-1038,1338.9 -1084.7,1292.4 -1106.8,1292.4 -1038,1360.9 		"></polygon>
-		<polygon class="ladsvg-1559-st1" points="-1038,1407.2 -1153.4,1292.4 -1175.4,1292.4 -1038,1429.1 		"></polygon>
+		<polygon class="A" points="-1038,1292.2 -1038,1544.7 -1291.8,1292.2 -1187.4,1292.2 		"></polygon>
+		<polygon class="B" points="-1038,1544.7 -1291.8,1544.7 -1291.8,1292.2 -1164.9,1418.4 		"></polygon>
+		<polygon class="B" points="-1038,1475.8 -1222.4,1292.4 -1244.4,1292.4 -1038,1497.8 		"></polygon>
+		<polygon class="B" points="-1038,1338.9 -1084.7,1292.4 -1106.8,1292.4 -1038,1360.9 		"></polygon>
+		<polygon class="B" points="-1038,1407.2 -1153.4,1292.4 -1175.4,1292.4 -1038,1429.1 		"></polygon>
 	</g>
 </switch>
 

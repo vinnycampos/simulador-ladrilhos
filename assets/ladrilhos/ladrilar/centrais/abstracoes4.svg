@@ -1,17 +1,17 @@
 <svg version="1.1" id="Camada_1" xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;" xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 252.6 252.6" style="enable-background:new 0 0 252.6 252.6;" xml:space="preserve">
 <style type="text/css">
-	.ladsvg-1524-st0{fill:#E1E1E1;}
-	.ladsvg-1524-st1{fill:#1C1C1F;}
+	.A{fill:#E1E1E1;}
+	.B{fill:#1C1C1F;}
 </style>
 <switch>
 	
 	<g i:extraneous="self">
-		<path class="ladsvg-1524-st0" d="M126.3,126.4c0,0,0.1,0,0.1,0c0-0.1,0-0.1,0-0.2C126.4,56.6,182.8,0.1,252.4,0v0H0v252.4h0.1
+		<path class="A" d="M126.3,126.4c0,0,0.1,0,0.1,0c0-0.1,0-0.1,0-0.2C126.4,56.6,182.8,0.1,252.4,0v0H0v252.4h0.1
 			C0.2,182.8,56.7,126.4,126.3,126.4z"></path>
-		<path class="ladsvg-1524-st1" d="M126.4,126.2c0,0.1,0,0.1,0,0.2c68.3,0.1,123.8,54.4,125.9,122.2V0C182.8,0.1,126.4,56.6,126.4,126.2z"></path>
-		<path class="ladsvg-1524-st1" d="M252.4,252.4c-69.5-0.1-125.8-56.5-125.9-126c0,0-0.1,0-0.1,0c-69.6,0-126.1,56.4-126.2,126L252.4,252.4
+		<path class="B" d="M126.4,126.2c0,0.1,0,0.1,0,0.2c68.3,0.1,123.8,54.4,125.9,122.2V0C182.8,0.1,126.4,56.6,126.4,126.2z"></path>
+		<path class="B" d="M252.4,252.4c-69.5-0.1-125.8-56.5-125.9-126c0,0-0.1,0-0.1,0c-69.6,0-126.1,56.4-126.2,126L252.4,252.4
 			L252.4,252.4z"></path>
-		<path class="ladsvg-1524-st0" d="M126.4,126.4c0.1,69.5,56.4,125.9,125.9,126v-3.8C250.3,180.8,194.7,126.5,126.4,126.4z"></path>
+		<path class="A" d="M126.4,126.4c0.1,69.5,56.4,125.9,125.9,126v-3.8C250.3,180.8,194.7,126.5,126.4,126.4z"></path>
 	</g>
 </switch>
 

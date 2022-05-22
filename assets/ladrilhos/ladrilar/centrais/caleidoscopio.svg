@@ -1,22 +1,22 @@
 <svg version="1.1" id="Camada_1" xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;" xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 252.6 252.6" style="enable-background:new 0 0 252.6 252.6;" xml:space="preserve">
 <style type="text/css">
-	.ladsvg-8396-st0{fill:#995B31;}
-	.ladsvg-8396-st1{fill:#3F2B24;}
-	.ladsvg-8396-st2{fill:#BD8049;}
-	.ladsvg-8396-st3{fill:#E5B89E;}
-	.ladsvg-8396-st4{fill:#F1E1B2;}
+	.A{fill:#995B31;}
+	.B{fill:#3F2B24;}
+	.B{fill:#BD8049;}
+	.C{fill:#E5B89E;}
+	.D{fill:#F1E1B2;}
 </style>
 <switch>
 	
 	<g i:extraneous="self">
-		<polygon class="ladsvg-8396-st0" points="252.6,252.6 0,252.6 252.6,0 		"></polygon>
-		<polyline class="ladsvg-8396-st1" points="252.6,0 0,252.6 0,0 		"></polyline>
-		<polygon class="ladsvg-8396-st0" points="0,252.6 252.6,0 32.7,32.7 		"></polygon>
-		<polygon class="ladsvg-8396-st2" points="0,252.6 252.6,0 65.7,65.9 		"></polygon>
-		<polygon class="ladsvg-8396-st3" points="0,252.6 252.6,0 97.5,97.4 		"></polygon>
-		<polygon class="ladsvg-8396-st1" points="252.6,0 0,252.6 219.9,219.9 		"></polygon>
-		<polygon class="ladsvg-8396-st2" points="252.6,0 0,252.6 186.9,186.7 		"></polygon>
-		<polygon class="ladsvg-8396-st4" points="252.6,0 0,252.6 155.1,155.2 		"></polygon>
+		<polygon class="A" points="252.6,252.6 0,252.6 252.6,0 		"></polygon>
+		<polyline class="B" points="252.6,0 0,252.6 0,0 		"></polyline>
+		<polygon class="A" points="0,252.6 252.6,0 32.7,32.7 		"></polygon>
+		<polygon class="B" points="0,252.6 252.6,0 65.7,65.9 		"></polygon>
+		<polygon class="C" points="0,252.6 252.6,0 97.5,97.4 		"></polygon>
+		<polygon class="B" points="252.6,0 0,252.6 219.9,219.9 		"></polygon>
+		<polygon class="B" points="252.6,0 0,252.6 186.9,186.7 		"></polygon>
+		<polygon class="D" points="252.6,0 0,252.6 155.1,155.2 		"></polygon>
 	</g>
 </switch>
 

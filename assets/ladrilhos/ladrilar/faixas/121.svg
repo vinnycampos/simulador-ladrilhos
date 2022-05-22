@@ -2,18 +2,18 @@
                   <div id="svg-corner" class="svg">
             <svg version="1.1" id="Camada_1" xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;" xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-1291 1292.1 252.6 252.6" style="enable-background:new -1291 1292.1 252.6 252.6;" xml:space="preserve">
 <style type="text/css">
-	.ladsvg-2411-st0{fill:#D9CEC0;}
-	.ladsvg-2411-st1{fill:#F6F6F6;}
-	.ladsvg-2411-st2{fill:#35221B;}
+	.A{fill:#D9CEC0;}
+	.B{fill:#F6F6F6;}
+	.C{fill:#35221B;}
 </style>
 <switch>
 	
 	<g i:extraneous="self">
-		<rect x="-1291" y="1292.1" class="ladsvg-2411-st0" width="253.6" height="252.7"></rect>
-		<polygon class="ladsvg-2411-st1" points="-1111,1544.8 -1111,1471.5 -1037.4,1471.5 -1037.4,1354.5 -1228.4,1354.5 -1228.4,1544.8 		"></polygon>
-		<polygon class="ladsvg-2411-st2" points="-1037.4,1471.5 -1111,1471.5 -1111,1544.8 -1081.9,1544.8 -1081.9,1500.3 -1037.4,1500.3 		"></polygon>
-		<polygon class="ladsvg-2411-st2" points="-1228.4,1354.5 -1037.4,1354.5 -1037.4,1325.6 -1257.4,1325.6 -1257.4,1544.8 -1228.4,1544.8 		"></polygon>
-		<rect x="-1081.9" y="1500.3" class="ladsvg-2411-st0" width="44.7" height="44.5"></rect>
+		<rect x="-1291" y="1292.1" class="A" width="253.6" height="252.7"></rect>
+		<polygon class="B" points="-1111,1544.8 -1111,1471.5 -1037.4,1471.5 -1037.4,1354.5 -1228.4,1354.5 -1228.4,1544.8 		"></polygon>
+		<polygon class="C" points="-1037.4,1471.5 -1111,1471.5 -1111,1544.8 -1081.9,1544.8 -1081.9,1500.3 -1037.4,1500.3 		"></polygon>
+		<polygon class="C" points="-1228.4,1354.5 -1037.4,1354.5 -1037.4,1325.6 -1257.4,1325.6 -1257.4,1544.8 -1228.4,1544.8 		"></polygon>
+		<rect x="-1081.9" y="1500.3" class="A" width="44.7" height="44.5"></rect>
 	</g>
 </switch>
 
