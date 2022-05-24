@@ -1,21 +1,21 @@
 <svg version="1.1" id="Camada_1" xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;" xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-599 582.7 218.5 252.6" style="enable-background:new -599 582.7 218.5 252.6;" xml:space="preserve">
 <style type="text/css">
-	.ladsvg-8270-st0{fill:#F5F3F3;}
-	.ladsvg-8270-st1{fill:#D7B068;}
-	.ladsvg-8270-st2{fill:#3F2B24;}
+	.A{fill:#F5F3F3;}
+	.B{fill:#D7B068;}
+	.C{fill:#3F2B24;}
 </style>
 <switch>
 	
 	<g i:extraneous="self">
-		<polygon class="ladsvg-8270-st0" points="-380.6,645.7 -380.5,645.6 -380.8,645.6 -435.2,614.3 -489.8,582.7 -489.8,582.7 -544.4,614.3 
+		<polygon class="A" points="-380.6,645.7 -380.5,645.6 -380.8,645.6 -435.2,614.3 -489.8,582.7 -489.8,582.7 -544.4,614.3 
 			-598.7,645.6 -599,645.6 -599,645.7 -599,645.8 -599,771.9 -599,771.9 -599,771.9 -489.8,835 -380.5,771.9 -380.5,771.9 
 			-380.5,771.9 -380.5,645.8 		"></polygon>
-		<polygon class="ladsvg-8270-st1" points="-489.6,582.7 -526.2,645.7 -489.8,708.7 -453.3,645.5 		"></polygon>
-		<polygon class="ladsvg-8270-st2" points="-380.6,645.6 -453.3,645.5 -489.8,708.7 -417.1,708.7 		"></polygon>
-		<polygon class="ladsvg-8270-st1" points="-380.6,771.7 -417.1,708.7 -489.8,708.7 -453.2,771.8 		"></polygon>
-		<path class="ladsvg-8270-st2" d="M-490,834.8l36.7-63c0,0-37-63.4-36.6-63.1c0.3,0.3-36.3,63.1-36.3,63.1L-490,834.8z"></path>
-		<polygon class="ladsvg-8270-st1" points="-599.1,771.8 -526.2,772.1 -489.8,708.7 -562.7,708.9 		"></polygon>
-		<polygon class="ladsvg-8270-st2" points="-599,645.7 -562.7,708.9 -489.8,708.7 -526.2,645.7 		"></polygon>
+		<polygon class="B" points="-489.6,582.7 -526.2,645.7 -489.8,708.7 -453.3,645.5 		"></polygon>
+		<polygon class="C" points="-380.6,645.6 -453.3,645.5 -489.8,708.7 -417.1,708.7 		"></polygon>
+		<polygon class="B" points="-380.6,771.7 -417.1,708.7 -489.8,708.7 -453.2,771.8 		"></polygon>
+		<path class="C" d="M-490,834.8l36.7-63c0,0-37-63.4-36.6-63.1c0.3,0.3-36.3,63.1-36.3,63.1L-490,834.8z"></path>
+		<polygon class="B" points="-599.1,771.8 -526.2,772.1 -489.8,708.7 -562.7,708.9 		"></polygon>
+		<polygon class="C" points="-599,645.7 -562.7,708.9 -489.8,708.7 -526.2,645.7 		"></polygon>
 	</g>
 </switch>
 

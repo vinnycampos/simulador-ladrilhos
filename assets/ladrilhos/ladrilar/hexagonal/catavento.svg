@@ -1,21 +1,21 @@
 <svg version="1.1" id="Camada_1" xmlns:x="&amp;ns_extend;" xmlns:i="&amp;ns_ai;" xmlns:graph="&amp;ns_graphs;" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="-599 582.7 218.5 252.6" style="enable-background:new -599 582.7 218.5 252.6;" xml:space="preserve">
 <style type="text/css">
-	.ladsvg-4635-st0{fill:#426648;}
-	.ladsvg-4635-st1{fill:#F9FBF7;}
-	.ladsvg-4635-st2{fill:#AFA077;}
-	.ladsvg-4635-st3{fill:#D8D0BF;}
-	.ladsvg-4635-st4{fill:#9CBCAA;}
-	.ladsvg-4635-st5{fill:#364C37;}
+	.A{fill:#426648;}
+	.B{fill:#F9FBF7;}
+	.C{fill:#AFA077;}
+	.D{fill:#D8D0BF;}
+	.E{fill:#9CBCAA;}
+	.F{fill:#364C37;}
 </style>
 <switch>
 	
 	<g i:extraneous="self">
-		<polygon class="ladsvg-4635-st0" points="-598.9,646.9 -489.4,709.3 -598.9,772.5 		"></polygon>
-		<polygon class="ladsvg-4635-st1" points="-380.6,647.4 -489.4,709.3 -380.5,772.4 		"></polygon>
-		<polygon class="ladsvg-4635-st2" points="-490.7,583.3 -489.4,709.3 -380.6,647.4 		"></polygon>
-		<polygon class="ladsvg-4635-st3" points="-598.9,646.9 -489.4,709.3 -490.6,583.3 		"></polygon>
-		<polygon class="ladsvg-4635-st4" points="-380.6,772.5 -489.4,709.3 -489.8,835.3 		"></polygon>
-		<polygon class="ladsvg-4635-st5" points="-489.7,835.3 -489.4,709.3 -598.9,772.5 		"></polygon>
+		<polygon class="A" points="-598.9,646.9 -489.4,709.3 -598.9,772.5 		"></polygon>
+		<polygon class="B" points="-380.6,647.4 -489.4,709.3 -380.5,772.4 		"></polygon>
+		<polygon class="C" points="-490.7,583.3 -489.4,709.3 -380.6,647.4 		"></polygon>
+		<polygon class="D" points="-598.9,646.9 -489.4,709.3 -490.6,583.3 		"></polygon>
+		<polygon class="E" points="-380.6,772.5 -489.4,709.3 -489.8,835.3 		"></polygon>
+		<polygon class="F" points="-489.7,835.3 -489.4,709.3 -598.9,772.5 		"></polygon>
 	</g>
 </switch>
 
