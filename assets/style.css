@@ -39,7 +39,7 @@
 
 #preview-ladrilho{
     width: 432px;
-    /* height: 432px; */
+    height: 432px;
     border: 1px solid #dfdfdf;
 }
 
@@ -60,3 +60,166 @@
 
 .faixa-svg{float: left; width: 50%;}
 
+
+.row-ladrilhos{
+    display: flex;
+    flex-direction: row;
+}
+
+.settings-rejuntes{
+    width: 30%;
+}
+
+
+
+
+
+
+/* ===================================PRONTO===================================== */
+
+
+.box-itens-rejuntes {
+    list-style: none;
+    margin: 30px 0 0 0;
+    padding: 0;
+}
+
+.box-itens-ladrilhos li,
+.box-itens-rejuntes li {
+    display: block;
+    float: left;
+    list-style: none;
+    margin-right: 9px;
+    margin-bottom: 9px;
+}
+
+.box-itens-ladrilhos li span,
+.box-itens-rejuntes li span {
+    width: 51px;
+    height: 51px;
+    display: block;
+    background-color: #fff;
+    cursor: pointer;
+    border: 1px solid #eee;
+}
+
+.box-itens-ladrilhos li span.selected,
+.box-itens-rejuntes li span.selected {
+    transform: scale(1.15);
+    box-shadow: 0px 0px 2px rgb(0 0 0 / 30%);
+}
+
+.box-itens-ladrilhos li:first-child {
+    margin-left: 0;
+}
+
+.box-itens-ladrilhos li p,
+.box-itens-rejuntes li p {
+    margin: 0;
+    font-size: 11px;
+}
+
+#inner-ladrilhos svg {
+    cursor: crosshair;
+}
+
+.inner-rejuntes {
+    width: 620px;
+    height: fit-content;
+    margin: 45px auto 0;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+.inner-rejuntes .item-rejunte {
+    width: 100%;
+    float: left;
+    /* padding: 1px; */
+}
+
+.inner-rejuntes .item-rejunte .holder {
+    position: relative;
+    cursor: pointer;
+    display: flex;
+}
+
+.inner-rejuntes .item-rejunte .holder svg {
+    position: relative;
+    z-index: 1;
+    display: block;
+}
+
+/* .inner-rejuntes .item-rejunte span {
+  display: flex;
+  width: 100%;
+  padding: 50% 0;
+  background-color: #fff;
+} */
+
+.inner-rejuntes .item-rejunte.default span {
+    display: flex;
+    width: 100%;
+    padding: 50% 0;
+    border: 1px solid #ddd;
+}
+
+.form-ladrilhos {
+    max-width: 570px;
+    margin: 0 auto;
+}
+
+.form-ladrilhos .form-group {
+    margin: 0 0 15px;
+}
+
+.form-ladrilhos .form-group input,
+.form-ladrilhos .form-group textarea {
+    padding: 15px;
+    font-size: 15px;
+    width: 100%;
+    border: 1px solid #dfccb0;
+    font-family: sans-serif;
+}
+
+.group-rejunte {
+    display: none;
+}
+
+.box-rejunte-selected {
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: 5px;
+}
+
+.area-rejunte-selected {
+    width: 51px;
+    height: 51px;
+    border: 1px solid #eee;
+}
+
+.cor-rejunte-selected {
+    text-align: center;
+    display: block;
+    font-size: 14px;
+}
+
+.deg90 {
+    transform: rotate(90deg);
+    transition: all 0.3s ease;
+}
+
+.deg180 {
+    transform: rotate(180deg);
+    transition: all 0.3s ease;
+}
+
+.deg270 {
+    transform: rotate(270deg);
+    transition: all 0.3s ease;
+}
+
+.deg360 {
+    transform: rotate(360deg);
+    transition: all 0.3s ease;
+}

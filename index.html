@@ -9,8 +9,8 @@
     <title>Simulador</title>
 </head>
 <body>
-        <input type="hidden" id="selectedColor" name="selectedColor" value="black" />
-        <div class="container">
+    <input type="hidden" id="selectedColor" name="selectedColor" value="black" />
+    <div class="container">
         <div class="select">
             <div class="filter">
                 Categorias
@@ -25,7 +25,7 @@
                     <h5 class="nome-ladrilho">2019</h5>
                 </div>
                 <div class="thumb-ladrilho">
-                    <img class="min-ladrilhos" src="./assets/ladrilhos/baepi/classico/d12.svg" alt="">
+                    <img class="min-ladrilhos" src="./assets/ladrilhos/ladrilar/centrais/2002.svg" alt="">
                     <h5 class="nome-ladrilho">2019</h5>
                 </div>
             </div>
@@ -36,7 +36,227 @@
                 <button class="picker" value="red"></button>
             </div>
             <div id="preview-ladrilho"></div>
+        </div>
 
+        <div class="row-ladrilhos">
+            <div class="settings-rejuntes">
+                <h3 style="margin: 30px 0 20px;">Visualize os ladrilhos aplicados lado a lado</h3>
+                <h4 style="margin-bottom: 15px;">Opções de visualização</h4>
+                <span>Colunas: <input type="number" min="1" max="10" id="ladrilhos-colunas" value="4"></span> <span>Linhas: <input type="number" min="1" max="10" id="ladrilhos-linhas" value="4"></span>
+                <br><br>
+                <h4>Cor do rejunte:</h4>
+                <ul class="box-itens-rejuntes">
+                <li>
+                    <span data-hex="#2f2f2f" style="background-color: #2f2f2f;"></span>
+                    <p>I5</p>
+                </li>
+                <li>
+                    <span data-hex="#ffffff" style="background-color: #ffffff;"></span>
+                    <p>B9</p>
+                </li>
+                <li>
+                    <span data-hex="#f3f3e3" style="background-color: #f3f3e3;"></span>
+                    <p>C5</p>
+                </li>
+                <li>
+                    <span data-hex="#f2f2d6" style="background-color:#f2f2d6;"></span>
+                    <p>G8</p>
+                </li>
+                <li>
+                    <span data-hex="#c8c8c8" style="background-color:#c8c8c8;"></span>
+                    <p>J5</p>
+                </li>
+                <li>
+                    <span data-hex="#949494" style="background-color:#949494;"></span>
+                    <p>A7</p>
+                </li>
+                <li>
+                    <span data-hex="#5f5c58" style="background-color:#5f5c58;"></span>
+                    <p>D1</p>
+                </li>
+                <li>
+                    <span data-hex="#b7b793" style="background-color:#b7b793;"></span>
+                    <p>D7</p>
+                </li>
+                <li>
+                    <span data-hex="#f9f6d8" style="background-color:#f9f6d8;"></span>
+                    <p>D6</p>
+                </li>
+                <li>
+                    <span data-hex="#faf5c9" style="background-color:#faf5c9;"></span>
+                    <p>D3</p>
+                </li>
+                <li>
+                    <span data-hex="#eeeac2" style="background-color:#eeeac2;"></span>
+                    <p>L2</p>
+                </li>
+                <li>
+                    <span data-hex="#d7c9ac" style="background-color:#d7c9ac;"></span>
+                    <p>J4</p>
+                </li>
+                <li>
+                    <span data-hex="#faf3be" style="background-color:#faf3be;"></span>
+                    <p>A1</p>
+                </li>
+                <li>
+                    <span data-hex="#f6d66f" style="background-color:#f6d66f;"></span>
+                    <p>C8</p>
+                </li>
+                <li>
+                    <span data-hex="#f1cb4e" style="background-color:#f1cb4e;"></span>
+                    <p>A8</p>
+                </li>
+                <li>
+                    <span data-hex="#e4c86c" style="background-color:#e4c86c;"></span>
+                    <p>G2</p>
+                </li>
+                <li>
+                    <span data-hex="#cdaf50" style="background-color:#cdaf50;"></span>
+                    <p>D4</p>
+                </li>
+                <li>
+                    <span data-hex="#9b916a" style="background-color:#9b916a;"></span>
+                    <p>L5</p>
+                </li>
+                <li>
+                    <span data-hex="#745124" style="background-color:#745124;"></span>
+                    <p>C1</p>
+                </li>
+                <li>
+                    <span data-hex="#411818" style="background-color:#411818;"></span>
+                    <p>A5</p>
+                </li>
+                <li>
+                    <span data-hex="#4e1818" style="background-color:#4e1818;"></span>
+                    <p>H4</p>
+                </li>
+                <li>
+                    <span data-hex="#73290e" style="background-color:#73290e;"></span>
+                    <p>B3</p>
+                </li>
+                <li>
+                    <span data-hex="#922d21" style="background-color:#922d21;"></span>
+                    <p>B8</p>
+                </li>
+                <li>
+                    <span data-hex="#923e21" style="background-color:#923e21;"></span>
+                    <p>I8</p>
+                </li>
+                <li>
+                    <span data-hex="#b36745" style="background-color:#b36745;"></span>
+                    <p>F7</p>
+                </li>
+                <li>
+                    <span data-hex="#b07830" style="background-color:#b07830;"></span>
+                    <p>D9</p>
+                </li>
+                <li>
+                    <span data-hex="#d69046" style="background-color:#d69046;"></span>
+                    <p>A2</p>
+                </li>
+                <li>
+                    <span data-hex="#ebc765" style="background-color:#ebc765;"></span>
+                    <p>F2</p>
+                </li>
+                <li>
+                    <span data-hex="#e9a97a" style="background-color:#e9a97a;"></span>
+                    <p>C3</p>
+                </li>
+                <li>
+                    <span data-hex="#fbc7c7" style="background-color:#fbc7c7;"></span>
+                    <p>D2</p>
+                </li>
+                <li>
+                    <span data-hex="#dca984" style="background-color:#dca984;"></span>
+                    <p>F8</p>
+                </li>
+                <li>
+                    <span data-hex="#f4d4bf" style="background-color:#f4d4bf;"></span>
+                    <p>G4</p>
+                </li>
+                <li>
+                    <span data-hex="#b0bfbf" style="background-color:#b0bfbf;"></span>
+                    <p>L8</p>
+                </li>
+                <li>
+                    <span data-hex="#cfe2e7" style="background-color:#cfe2e7;"></span>
+                    <p>F9</p>
+                </li>
+                <li>
+                    <span data-hex="#a2d4e2" style="background-color:#a2d4e2;"></span>
+                    <p>A9</p>
+                </li>
+                <li>
+                    <span data-hex="#527c95" style="background-color:#527c95;"></span>
+                    <p>C6</p>
+                </li>
+                <li>
+                    <span data-hex="#2b6377" style="background-color:#2b6377;"></span>
+                    <p>B2</p>
+                </li>
+                <li>
+                    <span data-hex="#16485b" style="background-color:#16485b;"></span>
+                    <p>A3</p>
+                </li>
+                <li>
+                    <span data-hex="#253451" style="background-color:#253451;"></span>
+                    <p>E4</p>
+                </li>
+                <li>
+                    <span data-hex="#4c6a8d" style="background-color:#4c6a8d;"></span>
+                    <p>I9</p>
+                </li>
+                <li>
+                    <span data-hex="#113b90" style="background-color:#113b90;"></span>
+                    <p>I1</p>
+                </li>
+                <li>
+                    <span data-hex="#7a90a0" style="background-color:#7a90a0;"></span>
+                    <p>F4</p>
+                </li>
+                <li>
+                    <span data-hex="#4c8395" style="background-color:#4c8395;"></span>
+                    <p>I4</p>
+                </li>
+                <li>
+                    <span data-hex="#b8d29d" style="background-color:#b8d29d;"></span>
+                    <p>H5</p>
+                </li>
+                <li>
+                    <span data-hex="#7fa363" style="background-color:#7fa363;"></span>
+                    <p>A6</p>
+                </li>
+                <li>
+                    <span data-hex="#414d25" style="background-color:#414d25;"></span>
+                    <p>B1</p>
+                </li>
+                <li>
+                    <span data-hex="#303722" style="background-color:#303722;"></span>
+                    <p>I3</p>
+                </li>
+                <li>
+                    <span data-hex="#8f9940" style="background-color:#8f9940;"></span>
+                    <p>G9</p>
+                </li>
+                <li>
+                    <span data-hex="#5b6749" style="background-color:#5b6749;"></span>
+                    <p>L1</p>
+                </li>
+                <li>
+                    <span data-hex="#6b8d71" style="background-color:#6b8d71;"></span>
+                    <p>H2</p>
+                </li>
+                <li>
+                    <span data-hex="#6b8d82" style="background-color:#6b8d82;"></span>
+                    <p>H3</p>
+                </li>
+                </ul>
+                <br style="clear: both;">
+                <br>
+                <button class="cs-button cs-form-submit" type="button" id="view-ladrilhos">VISUALIZAR</button>
+                <p style="text-align: center; margin-top: 45px;">*Clique no ladrilho desejado para rotacioná-lo.</p>
+            </div>
+            <div class="inner-rejuntes" id="inner-rejuntes"></div>
         </div>
     </div>
 
