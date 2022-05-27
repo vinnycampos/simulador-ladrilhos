@@ -10,15 +10,18 @@
 
 .select{
     display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
-.filter{}
+.select-filter{}
     
-.ladrilhos{
+.select-ladrilhos{
     display: flex;
     flex-direction: row;
     gap: 16px;
     overflow-y: scroll;
+    width: 100%;
 }
         
 .thumb-ladrilho{
@@ -203,6 +206,7 @@
     display: block;
     font-size: 14px;
 }
+
 
 .deg90 {
     transform: rotate(90deg);
