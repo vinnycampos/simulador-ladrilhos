@@ -1,15 +1,18 @@
 (function() {
+
 /*Pega o clicado e renderiza*/
     $('img.min-ladrilhos').click(function() { 
         const svg = $(this).attr('src');
+        const nomesvg = $(this).attr('alt')
         $("#preview-ladrilho").load(svg)
+        $("#nome-ladrilho").html(nomesvg)
     });
 
     $('.picker').click(function() {
         $("#selectedColor").val( $(this).val() )
     });
 
-
+/*Colorindo*/
     $("#preview-ladrilho").on("click", "path", function(){
             $(this).css("fill", $("#selectedColor").val() )
         })
@@ -20,22 +23,180 @@
             $(this).css("fill", $("#selectedColor").val() )
         })
 
+
+/*Categoria*/
+    const centrais = document.querySelectorAll("#select-ladrilhos-centrais");
+    const classico = document.querySelectorAll("#select-ladrilhos-classico");
+    const faixas = document.querySelectorAll("#select-ladrilhos-faixas");
+    const flores = document.querySelectorAll("#select-ladrilhos-flores");
+    const geometrico = document.querySelectorAll("#select-ladrilhos-geometrico");
+    const hexagonal = document.querySelectorAll("#select-ladrilhos-hexagonal");
+    const tozetos = document.querySelectorAll("#select-ladrilhos-tozetos");
+    const vintage = document.querySelectorAll("#select-ladrilhos-vintage");
+    const exclusivo = document.querySelectorAll("#select-ladrilhos-exclusivo");
+
+
+    const tabs = document.querySelectorAll(".select-filter button");
+    const minLadrilhos = document.querySelectorAll(".select-ladrilhos > div");
+
+    tabs.forEach((tab) => {
+        tab.addEventListener("click", () => {
+            tabs.forEach((tab) => {
+                tab.classList.remove("active")
+            })
+            tab.classList.add("active");
+
+
+            const tabVal = tab.getAttribute("data-id")
+            minLadrilhos.forEach((min) => {
+                min.classList.remove("active")
+                min.classList.add("inactive")
+            })
+            if(tabVal == "todos"){
+                minLadrilhos.forEach((todos) => {
+                    todos.classList.add("active")
+                    todos.classList.remove("inactive")
+                })
+                return;
+            }
+            if(tabVal == "centrais"){
+                centrais.forEach((central) => {
+                    central.classList.add("active")
+                    central.classList.remove("inactive")
+                })
+                return;
+            }
+            if(tabVal == "classico"){
+                classico.forEach((classicos) => {
+                    classicos.classList.add("active")
+                    classicos.classList.remove("inactive")
+                })
+                return;
+            }
+            if(tabVal == "faixas"){
+                faixas.forEach((faixa) => {
+                    faixa.classList.add("active")
+                    faixa.classList.remove("inactive")
+                })
+                return;
+            }
+            if(tabVal == "florais"){
+                flores.forEach((flor) => {
+                    flor.classList.add("active")
+                    flor.classList.remove("inactive")
+                })
+                return;
+            }
+            if(tabVal == "geometricos"){
+                geometrico.forEach((geometricos) => {
+                    geometricos.classList.add("active")
+                    geometricos.classList.remove("inactive")
+                })
+                return;
+            }
+            if(tabVal == "hexagonais"){
+                hexagonal.forEach((hexagonais) => {
+                    hexagonais.classList.add("active")
+                    hexagonais.classList.remove("inactive")
+                })
+                return;
+            }
+            if(tabVal == "tozetos"){
+                tozetos.forEach((tozeto) => {
+                    tozeto.classList.add("active")
+                    tozeto.classList.remove("inactive")
+                })
+                return;
+            }
+            if(tabVal == "vintages"){
+                vintage.forEach((vintages) => {
+                    vintages.classList.add("active")
+                    vintages.classList.remove("inactive")
+                })
+                return;
+            }
+            if(tabVal == "exclusivos"){
+                exclusivo.forEach((exclusivos) => {
+                    exclusivos.classList.add("active")
+                    console.log('foi')
+                    exclusivos.classList.remove("inactive")
+                })
+                return;
+            }
+            
+        })
+        
+    })
+
+    const colorBtn = document.querySelectorAll(".picker")
+
+    colorBtn.forEach((color)=>{
+        color.addEventListener("click", () => {
+            colorBtn.forEach((color)=>{
+                color.classList.remove("picker-active")
+            })
+            color.classList.add("picker-active")
+        })
+    })
+	
 })();
 
+function printSVG(preview){
+    var $print = $(preview)
+        .clone()
+        .addClass('print')
+        .prependTo('body');
+
+    // Stop JS execution
+    window.print();
+
+    // Remove div once printed
+    $print.remove();
+}
+
+//verificar de é faixa, se for desabilitar botão 3d
+
+function render3d() {
+	iniciamodal()
+    var inner_rejuntes = $('#preview3d');
+    var coluna_px = ($(".imagem3d").innerWidth() / 24) + -18.5;
+    var total_linhas_colunas = 24 * 12;
+    var html_inner_ladrilhos = $('#preview-ladrilho')[0].innerHTML;
+    var html_inner_ladrilhos_ajustado = html_inner_ladrilhos.replace(/432px/g, coluna_px + 'px');
+    var item_ladrilhos = '<div class="item-rejunte" style="width: 32.333333px; height: 32.33333px; padding: 0.5px; margin: 0px;"><div class="holder">' + html_inner_ladrilhos_ajustado + '</div></div>';
+    var html_ladrilhos = '';
+    for (var i = 0; i < total_linhas_colunas; i++) {
+        html_ladrilhos += item_ladrilhos;
+    }
+    html_ladrilhos += '<br style="clear: both;">';
+    inner_rejuntes.html(html_ladrilhos);
+}
 
 
+function iniciamodal(){
+	const modal = document.getElementById('modal-3d')
+	modal.classList.add("mostrar3d");
+}
 
-
-
-
-
-
-
-
-
-
-
-
+function fechamodal(){
+	const modal = document.getElementById('modal-3d')
+	modal.classList.remove("mostrar3d")
+}
+    //         var coluna_px = ($(inner_rejuntes).innerWidth() / ladrilhos_colunas.val()) - 4;
+    //         var total_linhas_colunas = ladrilhos_colunas.val() * ladrilhos_linhas.val();
+    //         var html_inner_ladrilhos = $('#preview-ladrilho')[0].innerHTML;
+    //         $(inner_rejuntes).css('background-color', cor_rejunte);
+    //         $(inner_rejuntes).css('border-color', cor_rejunte);
+    //         var html_inner_ladrilhos_ajustado = html_inner_ladrilhos.replace(/432px/g, coluna_px + 'px');
+    //         var item_ladrilhos = '<div class="item-rejunte" style="width: ' + coluna_px + 'px; padding: 1px; margin-right: 2px;"><div class="holder">' + html_inner_ladrilhos_ajustado + '</div></div>';
+    //         var html_ladrilhos = '';
+    //         for (var i = 0; i < total_linhas_colunas; i++) {
+    //             html_ladrilhos += item_ladrilhos;
+    //         }
+    //         html_ladrilhos += '<br style="clear: both;">';
+    //         inner_rejuntes.html(html_ladrilhos);
+    //         rotate();
+    //     }
 
     // var cor = '';
     // var item_cor = $('.box-itens-ladrilhos li span');

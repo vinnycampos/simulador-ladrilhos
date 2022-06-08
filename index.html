@@ -15,35 +15,976 @@
 
             <!-- Quando clicar troca a classe para active no botão, e nos ladrilhos -->
             <div class="select-filter">
-                <button class="active">Todos</button>
-                <button class="">Centrais</button>
-                <button class="">Clássicos</button>
-                <button class="">Faixas e Cantos</button>
-                <button class="">Florais</button>
-                <button class="">Geométricos</button>
-                <button class="">Hexagonais</button>
-                <button class="">Tozetos</button>
-                <button class="">Vintages</button>
+                <button data-id="todos" class="active">Todos</button>
+                <button data-id="centrais" class="">Centrais</button>
+                <button data-id="classico" class="">Clássicos</button>
+                <button data-id="faixas" class="">Faixas e Cantos</button>
+                <button data-id="florais" class="">Florais</button>
+                <button data-id="geometricos" class="">Geométricos</button>
+                <button data-id="hexagonais" class="">Hexagonais</button>
+                <button data-id="tozetos" class="">Tozetos</button>
+                <button data-id="vintages" class="">Vintages</button>
+                <button data-id="exclusivos" class="">Exclusivos</button>
             </div>
+            
             <div class="select-ladrilhos">
-                <div class="thumb-ladrilho">
-                    <img class="min-ladrilhos" src="./assets/ladrilhos/classico/d46.svg" alt="" >
-                    <h5 class="nome-ladrilho">2002</h5>
+                <div class="active" id="select-ladrilhos-centrais">
+                    <h2>Centrais</h2>
+                    <div class="select-ladrilhos-miniaturas">
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2002.svg" alt="2002" >
+                            <h5 class="nome-ladrilho">2002</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2003.svg" alt="2003" >
+                            <h5 class="nome-ladrilho">2003</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2014.svg" alt="2014" >
+                            <h5 class="nome-ladrilho">2014</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2018.svg" alt="2018" >
+                            <h5 class="nome-ladrilho">2018</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2019.svg" alt="2019" >
+                            <h5 class="nome-ladrilho">2019</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2021.svg" alt="2021" >
+                            <h5 class="nome-ladrilho">2021</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2023.svg" alt="2023" >
+                            <h5 class="nome-ladrilho">2023</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2026.svg" alt="2026" >
+                            <h5 class="nome-ladrilho">2026</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2029.svg" alt="2029" >
+                            <h5 class="nome-ladrilho">2029</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2075.svg" alt="2075" >
+                            <h5 class="nome-ladrilho">2075</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2076.svg" alt="2076" >
+                            <h5 class="nome-ladrilho">2076</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2083.svg" alt="2083" >
+                            <h5 class="nome-ladrilho">2083</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2097.svg" alt="2097" >
+                            <h5 class="nome-ladrilho">2097</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2107.svg" alt="2107" >
+                            <h5 class="nome-ladrilho">2107</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2124.svg" alt="2124" >
+                            <h5 class="nome-ladrilho">2124</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2133.svg" alt="2133" >
+                            <h5 class="nome-ladrilho">2133</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2140.svg" alt="2140" >
+                            <h5 class="nome-ladrilho">2140</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/2182.svg" alt="2182" >
+                            <h5 class="nome-ladrilho">2182</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/4068.svg" alt="4068" >
+                            <h5 class="nome-ladrilho">4068</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/4069.svg" alt="4069" >
+                            <h5 class="nome-ladrilho">4069</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/4085.svg" alt="4085" >
+                            <h5 class="nome-ladrilho">4085</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/4112.svg" alt="4112" >
+                            <h5 class="nome-ladrilho">4112</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/4135.svg" alt="4135" >
+                            <h5 class="nome-ladrilho">4135</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/4141.svg" alt="4141" >
+                            <h5 class="nome-ladrilho">4141</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/4193.svg" alt="4193" >
+                            <h5 class="nome-ladrilho">4193</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/abstracoes3.svg" alt="Abstrações 3" >
+                            <h5 class="nome-ladrilho">Abstrações 3</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/abstracoes4.svg" alt="Abstrações 4" >
+                            <h5 class="nome-ladrilho">Abstrações 4</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/amalfi.svg" alt="Amalfi" >
+                            <h5 class="nome-ladrilho">Amalfi</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/andorinha.svg" alt="Andorinha" >
+                            <h5 class="nome-ladrilho">Andorinha</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/balao.svg"alt="Balão" >
+                            <h5 class="nome-ladrilho">Balão</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/caleidoscopio.svg"alt="Caleidos-cópio" >
+                            <h5 class="nome-ladrilho">Caleidos-cópio</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/central30.svg"alt="Central 30" >
+                            <h5 class="nome-ladrilho">Central 30</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/centro-arabe-2.svg"alt="Centro Árabe 2" >
+                            <h5 class="nome-ladrilho">Centro Árabe 2</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/contra-dama-4051.svg"alt="Contra Dama 4051" >
+                            <h5 class="nome-ladrilho">Contra Dama 4051</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/doma.svg"alt="Doma" >
+                            <h5 class="nome-ladrilho">Doma</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/estelar.svg" alt="Estelar">
+                            <h5 class="nome-ladrilho">Estelar</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/estrela-omar.svg" alt="Estelar Omar">
+                            <h5 class="nome-ladrilho">Estelar Omar</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/floral-tulipa.svg" alt="Floral Tulipa">
+                            <h5 class="nome-ladrilho">Floral Tulipa</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/gaivota.svg" alt="Gaivota">
+                            <h5 class="nome-ladrilho">Gaivota</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/gobeto.svg" alt="Gobeto">
+                            <h5 class="nome-ladrilho">Gobeto</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/grama.svg" alt="Grama">
+                            <h5 class="nome-ladrilho">Grama</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/linha.svg" alt="Linha">
+                            <h5 class="nome-ladrilho">Linha</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/maia.svg" alt="Maia">
+                            <h5 class="nome-ladrilho">Maia</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/mauricio-arruda-hexagonal.svg" alt="Mauricio Arruda Hexagonal">
+                            <h5 class="nome-ladrilho">Mauricio Arruda Hexagonal</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/mauricio-arruda-navy-3.svg" alt="Mauricio Arruda Navy 3">
+                            <h5 class="nome-ladrilho">Mauricio Arruda Navy 3</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/meia-cara-composto.svg" alt="Meia Cara Composto">
+                            <h5 class="nome-ladrilho">Meia Cara Composto</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/meia-cara.svg" alt="Meia Cara">
+                            <h5 class="nome-ladrilho">Meia Cara</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/raminho-filetado.svg" alt="Raminho Filetado">
+                            <h5 class="nome-ladrilho">Raminho Filetado</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/rosa.svg" alt="Rosa">
+                            <h5 class="nome-ladrilho">Rosa</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/traco.svg" alt="Traco">
+                            <h5 class="nome-ladrilho">Traco</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/x-filetado.svg" alt="X Filetado">
+                            <h5 class="nome-ladrilho">X Filetado</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/centrais/x-simples.svg" alt="X Simples">
+                            <h5 class="nome-ladrilho">X Simples</h5>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="active" id="select-ladrilhos-classico">
+                    <h2>Clássicos</h2>
+                    <div class="select-ladrilhos-miniaturas">
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/classico/d12.svg" alt="D12" >
+                            <h5 class="nome-ladrilho">D12</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/classico/d13.svg" alt="D13" >
+                            <h5 class="nome-ladrilho">D13</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/classico/d23.svg" alt="D23" >
+                            <h5 class="nome-ladrilho">D23</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/classico/d29.svg" alt="D29" >
+                            <h5 class="nome-ladrilho">D29</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/classico/d46.svg" alt="D46" >
+                            <h5 class="nome-ladrilho">D46</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="active" id="select-ladrilhos-faixas">
+                    <h2>Faixas e Cantos</h2>
+                    <div class="select-ladrilhos-miniaturas">
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/faixas/102.svg" alt="102" >
+                            <h5 class="nome-ladrilho">102</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/faixas/103.svg" alt="103" >
+                            <h5 class="nome-ladrilho">103</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/faixas/105.svg" alt="105" >
+                            <h5 class="nome-ladrilho">105</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/faixas/112.svg" alt="112" >
+                            <h5 class="nome-ladrilho">112</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/faixas/113.svg" alt="113" >
+                            <h5 class="nome-ladrilho">113</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/faixas/115.svg" alt="115" >
+                            <h5 class="nome-ladrilho">115</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/faixas/121.svg" alt="121" >
+                            <h5 class="nome-ladrilho">121</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/faixas/131.svg" alt="131" >
+                            <h5 class="nome-ladrilho">131</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/faixas/138.svg" alt="138" >
+                            <h5 class="nome-ladrilho">138</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/faixas/141.svg" alt="141" >
+                            <h5 class="nome-ladrilho">141</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/faixas/d01.svg" alt="D01" >
+                            <h5 class="nome-ladrilho">D01</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/faixas/d04.svg" alt="d04" >
+                            <h5 class="nome-ladrilho">d04</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/faixas/d07.svg" alt="d07" >
+                            <h5 class="nome-ladrilho">d07</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/faixas/faixa-grega.svg" alt="Faixa Grega" >
+                            <h5 class="nome-ladrilho">Faixa Grega</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="active" id="select-ladrilhos-flores">
+                    <h2>Flores</h2>
+                    <div class="select-ladrilhos-miniaturas">
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/3031.svg" alt="3031" >
+                            <h5 class="nome-ladrilho">3031</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/3033.svg" alt="3033" >
+                            <h5 class="nome-ladrilho">3033</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/3040.svg" alt="3040" >
+                            <h5 class="nome-ladrilho">3040</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/3094.svg" alt="3094" >
+                            <h5 class="nome-ladrilho">3094</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/3095.svg" alt="3095" >
+                            <h5 class="nome-ladrilho">3095</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/3122.svg" alt="3122" >
+                            <h5 class="nome-ladrilho">3122</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/3123.svg" alt="3123" >
+                            <h5 class="nome-ladrilho">3123</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/3175.svg" alt="3175" >
+                            <h5 class="nome-ladrilho">3175</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/3188.svg" alt="3188" >
+                            <h5 class="nome-ladrilho">3188</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/3206.svg" alt="3206" >
+                            <h5 class="nome-ladrilho">3206</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/3247.svg" alt="3247" >
+                            <h5 class="nome-ladrilho">3247</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/3288.svg" alt="3288" >
+                            <h5 class="nome-ladrilho">3288</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/4304.svg" alt="4304" >
+                            <h5 class="nome-ladrilho">4304</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/d10.svg" alt="d10" >
+                            <h5 class="nome-ladrilho">d10</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/d45.svg" alt="d45" >
+                            <h5 class="nome-ladrilho">d45</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/d52.svg" alt="d52" >
+                            <h5 class="nome-ladrilho">d52</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/d79.svg" alt="d79" >
+                            <h5 class="nome-ladrilho">d79</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/flor-de-lotus.svg" alt="Flor de Lotus" >
+                            <h5 class="nome-ladrilho">Flor de Lotus</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/flores/mandala-central.svg" alt="Mandala Central" >
+                            <h5 class="nome-ladrilho">Mandala Central</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="active" id="select-ladrilhos-geometrico">
+                    <h2>Geométricos</h2>
+                    <div class="select-ladrilhos-miniaturas">
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/geometrico/d61.svg" alt="D61" >
+                            <h5 class="nome-ladrilho">D61</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/geometrico/d65.svg" alt="D65" >
+                            <h5 class="nome-ladrilho">D65</h5>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="active" id="select-ladrilhos-hexagonal">
+                    <h2>Hexagonais</h2>
+                    <div class="select-ladrilhos-miniaturas">
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/hexagonal/catavento.svg" alt="Catavento" >
+                            <h5 class="nome-ladrilho">Catavento</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/hexagonal/colmeia.svg" alt="Colmeia" >
+                            <h5 class="nome-ladrilho">Colmeia</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/hexagonal/colmeia2.svg" alt="2" >
+                            <h5 class="nome-ladrilho">Colmeia 2</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/hexagonal/d12.svg" alt="D12" >
+                            <h5 class="nome-ladrilho">D12</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/hexagonal/diamante.svg" alt="Diamante" >
+                            <h5 class="nome-ladrilho">Diamante</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/hexagonal/estrela.svg" alt="Estrela" >
+                            <h5 class="nome-ladrilho">Estrela</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/hexagonal/face.svg" alt="Face" >
+                            <h5 class="nome-ladrilho">Face</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/hexagonal/folha.svg" alt="Folha" >
+                            <h5 class="nome-ladrilho">Folha</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/hexagonal/gobeto.svg" alt="Gobeto" >
+                            <h5 class="nome-ladrilho">Gobeto</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/hexagonal/netuno.svg" alt="Netuno" >
+                            <h5 class="nome-ladrilho">Netuno</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/hexagonal/sol.svg" alt="Sol" >
+                            <h5 class="nome-ladrilho">Sol</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/hexagonal/triangulo.svg" alt="Triangulo" >
+                            <h5 class="nome-ladrilho">Triangulo</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="active" id="select-ladrilhos-tozetos">
+                    <h2>Tozetos</h2>
+                    <div class="select-ladrilhos-miniaturas">
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/tozetos/flor1.svg" alt="Flor 1" >
+                            <h5 class="nome-ladrilho">Flor 1</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/tozetos/flor2.svg" alt="Flor 2" >
+                            <h5 class="nome-ladrilho">Flor 2</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/tozetos/flor4.svg" alt="Flor 4" >
+                            <h5 class="nome-ladrilho">Flor 4</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/tozetos/lomando.svg" alt="Lomando" >
+                            <h5 class="nome-ladrilho">Lomando</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/tozetos/tulipa.svg" alt="Tulipa" >
+                            <h5 class="nome-ladrilho">Tulipa</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="active" id="select-ladrilhos-vintage">
+                    <h2>Vintage</h2>
+                    <div class="select-ladrilhos-miniaturas">
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/vintage/d55.svg" alt="D55" >
+                            <h5 class="nome-ladrilho">D55</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/vintage/d72.svg" alt="D72" >
+                            <h5 class="nome-ladrilho">D72</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/vintage/d75.svg" alt="D75" >
+                            <h5 class="nome-ladrilho">D75</h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="active" id="select-ladrilhos-exclusivo">
+                    <h2>Exclusivos</h2>
+                    <div class="select-ladrilhos-miniaturas">
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1600.svg" alt="1600" >
+                            <h5 class="nome-ladrilho">1600</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1601.svg" alt="1601" >
+                            <h5 class="nome-ladrilho">1601</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1602.svg" alt="1602" >
+                            <h5 class="nome-ladrilho">1602</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1603.svg" alt="1603" >
+                            <h5 class="nome-ladrilho">1603</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1604.svg" alt="1604" >
+                            <h5 class="nome-ladrilho">1604</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1605.svg" alt="1605" >
+                            <h5 class="nome-ladrilho">1605</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1606.svg" alt="1606" >
+                            <h5 class="nome-ladrilho">1606</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1607.svg" alt="1607" >
+                            <h5 class="nome-ladrilho">1607</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1608.svg" alt="1608" >
+                            <h5 class="nome-ladrilho">1608</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1609.svg" alt="1609" >
+                            <h5 class="nome-ladrilho">1609</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1610.svg" alt="1610" >
+                            <h5 class="nome-ladrilho">1610</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1611.svg" alt="1611" >
+                            <h5 class="nome-ladrilho">1611</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1612.svg" alt="1612" >
+                            <h5 class="nome-ladrilho">1612</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1613.svg" alt="1613" >
+                            <h5 class="nome-ladrilho">1613</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1614.svg" alt="1614" >
+                            <h5 class="nome-ladrilho">1614</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1615.svg" alt="1615" >
+                            <h5 class="nome-ladrilho">1615</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1616.svg" alt="1616" >
+                            <h5 class="nome-ladrilho">1616</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1617.svg" alt="1617" >
+                            <h5 class="nome-ladrilho">1617</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1618.svg" alt="1618" >
+                            <h5 class="nome-ladrilho">1618</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1619.svg" alt="1619" >
+                            <h5 class="nome-ladrilho">1619</h5>
+                        </div>
+
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1620.svg" alt="1620" >
+                            <h5 class="nome-ladrilho">1620</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1621.svg" alt="1621" >
+                            <h5 class="nome-ladrilho">1621</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1622.svg" alt="1622" >
+                            <h5 class="nome-ladrilho">1622</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1623.svg" alt="1623" >
+                            <h5 class="nome-ladrilho">1623</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1624.svg" alt="1624" >
+                            <h5 class="nome-ladrilho">1624</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1625.svg" alt="1625" >
+                            <h5 class="nome-ladrilho">1625</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1626.svg" alt="1626" >
+                            <h5 class="nome-ladrilho">1626</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1627.svg" alt="1627" >
+                            <h5 class="nome-ladrilho">1627</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1628.svg" alt="1628" >
+                            <h5 class="nome-ladrilho">1628</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1629.svg" alt="1629" >
+                            <h5 class="nome-ladrilho">1629</h5>
+                        </div>
+
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1630.svg" alt="1630" >
+                            <h5 class="nome-ladrilho">1630</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1631.svg" alt="1631" >
+                            <h5 class="nome-ladrilho">1631</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1632.svg" alt="1632" >
+                            <h5 class="nome-ladrilho">1632</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1633.svg" alt="1633" >
+                            <h5 class="nome-ladrilho">1633</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1634.svg" alt="1634" >
+                            <h5 class="nome-ladrilho">1634</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1635.svg" alt="1635" >
+                            <h5 class="nome-ladrilho">1635</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1636.svg" alt="1636" >
+                            <h5 class="nome-ladrilho">1636</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1637.svg" alt="1637" >
+                            <h5 class="nome-ladrilho">1637</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1638.svg" alt="1638" >
+                            <h5 class="nome-ladrilho">1638</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1639.svg" alt="1639" >
+                            <h5 class="nome-ladrilho">1639</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1640.svg" alt="1640" >
+                            <h5 class="nome-ladrilho">1640</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1641.svg" alt="1641" >
+                            <h5 class="nome-ladrilho">1641</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1642.svg" alt="1642" >
+                            <h5 class="nome-ladrilho">1642</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1643.svg" alt="1643" >
+                            <h5 class="nome-ladrilho">1643</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1644.svg" alt="1644" >
+                            <h5 class="nome-ladrilho">1644</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1645.svg" alt="1645" >
+                            <h5 class="nome-ladrilho">1645</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1646.svg" alt="1646" >
+                            <h5 class="nome-ladrilho">1646</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1647.svg" alt="1647" >
+                            <h5 class="nome-ladrilho">1647</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1648.svg" alt="1648" >
+                            <h5 class="nome-ladrilho">1648</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1649.svg" alt="1649" >
+                            <h5 class="nome-ladrilho">1649</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1650.svg" alt="1650" >
+                            <h5 class="nome-ladrilho">1650</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1651.svg" alt="1651" >
+                            <h5 class="nome-ladrilho">1651</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1652.svg" alt="1652" >
+                            <h5 class="nome-ladrilho">1652</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1653.svg" alt="1653" >
+                            <h5 class="nome-ladrilho">1653</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1654.svg" alt="1654" >
+                            <h5 class="nome-ladrilho">1654</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1655.svg" alt="1655" >
+                            <h5 class="nome-ladrilho">1655</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1656.svg" alt="1656" >
+                            <h5 class="nome-ladrilho">1656</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1657.svg" alt="1657" >
+                            <h5 class="nome-ladrilho">1657</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1658.svg" alt="1658" >
+                            <h5 class="nome-ladrilho">1658</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1659.svg" alt="1659" >
+                            <h5 class="nome-ladrilho">1659</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1660.svg" alt="1660" >
+                            <h5 class="nome-ladrilho">1660</h5>
+                        </div>
+                        <div class="thumb-ladrilho">
+                            <img class="min-ladrilhos" src="./assets/ladrilhos/exclusivos/1661.svg" alt="1661" >
+                            <h5 class="nome-ladrilho">1661</h5>
+                        </div>
+                        
+                    </div>
                 </div>
 
             </div>
         </div>
 
         <div class="preview">
-            <div id="preview-color">
-                <button class="picker" value="red"></button>
+            <div class="print">
+                <div id="preview-ladrilho"></div>
+                <div id="nome-ladrilho"></div>
+                <input class="button-print"type="button" onclick="printSVG('preview-ladrilho')" value="Baixar Ladrilho" />
+                <button class="button-render3d" onclick="render3d()">Aplicar Ladrilho</button>
             </div>
-            <div id="preview-ladrilho"></div>
+            <div id="preview-color">
+                <div class="color">
+                    <button class="picker" value="#40e0d0" style="background-color: #40e0d0;"></button>
+                    <p class="color-name">Turquesa</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#ccc14f" style="background-color: #ccc14f;"></button>
+                    <p class="color-name">Verde Abacate</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#006400 " style="background-color: #006400 ;"></button>
+                    <p class="color-name">Verde musgo</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#36220e" style="background-color: #36220e;"></button>
+                    <p class="color-name">Verde 250</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#81a969" style="background-color: #81a969;"></button>
+                    <p class="color-name">Verde 125</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#03bb85" style="background-color: #03bb85;"></button>
+                    <p class="color-name">Verde Água</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#0abab5 " style="background-color: #0abab5 ;"></button>
+                    <p class="color-name">Tiffany</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#c8a2c8 " style="background-color: #c8a2c8 ;"></button>
+                    <p class="color-name">Lilás</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#ee82ee" style="background-color: #ee82ee;"></button>
+                    <p class="color-name">Violeta</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#5F9F9F " style="background-color: #5F9F9F ;"></button>
+                    <p class="color-name">Azul Claro</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#71c1e8" style="background-color: #71c1e8;"></button>
+                    <p class="color-name">Azul Bebê</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#4682b4" style="background-color: #4682b4;"></button>
+                    <p class="color-name">Azul Tramar</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#4169e1" style="background-color: #4169e1;"></button>
+                    <p class="color-name">Azul Royal</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#00009c" style="background-color: #00009c;"></button>
+                    <p class="color-name">Azul Escuro</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#084d6e" style="background-color: #084d6e;"></button>
+                    <p class="color-name">Azul Petróleo</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#c2e2ad" style="background-color: #c2e2ad;"></button>
+                    <p class="color-name">Alecrim</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#fbc398" style="background-color: #fbc398;"></button>
+                    <p class="color-name">Nude</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#800000" style="background-color: #800000;"></button>
+                    <p class="color-name">Marrom</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#946d46" style="background-color: #946d46;"></button>
+                    <p class="color-name">Kraft</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#866042" style="background-color: #866042;"></button>
+                    <p class="color-name">Kraft Escuro</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#584910" style="background-color: #584910;"></button>
+                    <p class="color-name">Ouro Velho Escuro</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#bc9c22" style="background-color: #bc9c22;"></button>
+                    <p class="color-name">Ouro Velho</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#8d98a4" style="background-color: #8d98a4;"></button>
+                    <p class="color-name">Nimbus</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#a18262" style="background-color: #a18262;"></button>
+                    <p class="color-name">Café</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#bd9f7b " style="background-color: #bd9f7b ;"></button>
+                    <p class="color-name">Fendi</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#000000" style="background-color: #000000;"></button>
+                    <p class="color-name">Preto</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#808080" style="background-color: #808080;"></button>
+                    <p class="color-name">Cinza</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#5b5b58" style="background-color: #5b5b58;"></button>
+                    <p class="color-name">Cinza Chumbo</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#c0c0c0" style="background-color: #c0c0c0;"></button>
+                    <p class="color-name">Cinza Claro</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#b02c0c" style="background-color: #b02c0c;"></button>
+                    <p class="color-name">Terra Cota Escuro</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#e2725b" style="background-color: #e2725b;"></button>
+                    <p class="color-name">Terra Cota</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#bb6f58" style="background-color: #bb6f58;"></button>
+                    <p class="color-name">Terra Cota Claro</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#ffdb58" style="background-color: #ffdb58;"></button>
+                    <p class="color-name">Mostarda</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#ffff00" style="background-color: #ffff00;"></button>
+                    <p class="color-name">Amarelo</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#fad02c" style="background-color: #fad02c;"></button>
+                    <p class="color-name">Amarelo Claro</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#eccb88" style="background-color: #eccb88;"></button>
+                    <p class="color-name">Areia</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#ffffff" style="background-color: #ffffff;"></button>
+                    <p class="color-name">Branco</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#800080" style="background-color: #800080;"></button>
+                    <p class="color-name">Roxo</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#ff0000" style="background-color: #ff0000;"></button>
+                    <p class="color-name">Vermelho Vivo</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#cf0e0e " style="background-color: #cf0e0e ;"></button>
+                    <p class="color-name">Vermelho</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#ff7f50" style="background-color: #ff7f50;"></button>
+                    <p class="color-name">Goiaba</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#f7838d" style="background-color: #f7838d;"></button>
+                    <p class="color-name">Rosa Escuro</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#fcc0c5" style="background-color: #fcc0c5;"></button>
+                    <p class="color-name">Rosa</p>
+                </div>
+                <div class="color">
+                    <button class="picker" value="#ffe4e1" style="background-color: #ffe4e1;"></button>
+                    <p class="color-name">Rosa Claro</p>
+                </div>
+
+            </div> 
         </div>
 
+        <div id="modal-3d" class="ladrilho3d">
+            <div class="modal3d"> 
+                <button class="fechar3d" onclick="fechamodal()">X</button>        
+                <div class="imagem3d"><img src="https://www.ladrilar.com.br/wp-content/themes/mendel-child/assets/images/3d-low/ladrilar-3d-parede.png" alt="" class="ladrilar-3d__parede" id="img-3d"></div>
+                <div class="ladrilhos3d">
+                    <div id="preview3d"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
-    
+
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="./assets/simulador.js"></script>
