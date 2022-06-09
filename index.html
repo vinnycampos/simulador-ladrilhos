@@ -9,8 +9,21 @@
     <title>Simulador</title>
 </head>
 <body>
-    <input type="hidden" id="selectedColor" name="selectedColor" value="black" />
+    <input type="hidden" id="selectedColor" name="selectedColor" value="black" colorName="Preto" />
     <div class="container">
+
+        <div class="headline">
+            <h4>Simulador</h4>
+           <h2>Crie seu ladrilho customizado</h2> 
+            <div class="instrucoes">
+                <h5 style="text-align: left;">Passo-a-passo:</h5>
+                <p><strong>1º.</strong>&nbsp;<strong>Escolha um modelo</strong> de ladrilho para customizar.</p>
+                <p><strong>2º.</strong>&nbsp;<strong>Clique em uma cor</strong> para deixá-la selecionada e,<strong> clique nas áreas do ladrilho</strong> que deseja aplicar a cor. Após a customização, role a página e clique em “<strong>Aplicar Ladrilho</strong>” para ver o ladrilho aplicado em uma imagem.</p>
+                <p><strong>3º.</strong> Quando terminar, você pode clicar no botão para <strong>salvar ou imprimir</strong>&nbsp;seu ladrilho customizado. O navegador irá abrir uma janela com a possibilidade de salvar o arquivo em PDF ou enviá-lo para sua impressora.</p>
+    
+            </div>
+        </div>
+
         <div class="select">
 
             <!-- Quando clicar troca a classe para active no botão, e nos ladrilhos -->
@@ -18,7 +31,7 @@
                 <button data-id="todos" class="active">Todos</button>
                 <button data-id="centrais" class="">Centrais</button>
                 <button data-id="classico" class="">Clássicos</button>
-                <button data-id="faixas" class="">Faixas e Cantos</button>
+                <button data-id="faixas" class="">Faixas</button>
                 <button data-id="florais" class="">Florais</button>
                 <button data-id="geometricos" class="">Geométricos</button>
                 <button data-id="hexagonais" class="">Hexagonais</button>
@@ -789,7 +802,9 @@
             <div class="print">
                 <div id="preview-ladrilho"></div>
                 <div id="nome-ladrilho"></div>
-                <input class="button-print"type="button" onclick="printSVG('preview-ladrilho')" value="Baixar Ladrilho" />
+                <hr style="border: 0.5px solid #e5e5e5; margin: 5px 0;">
+                <div id="nome-cor"></div>
+                <button class="button-print"type="button" onclick="printSVG('preview-ladrilho')" value="Baixar Ladrilho" >Baixar Ladrilho</button>
                 <button class="button-render3d" onclick="render3d()">Aplicar Ladrilho</button>
             </div>
             <div id="preview-color">

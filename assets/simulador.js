@@ -10,18 +10,54 @@
 
     $('.picker').click(function() {
         $("#selectedColor").val( $(this).val() )
+        $("#selectedColor").attr("colorName", $(this).attr("color-name"))
     });
 
 /*Colorindo*/
     $("#preview-ladrilho").on("click", "path", function(){
             $(this).css("fill", $("#selectedColor").val() )
+            $(this).attr("colorname", $("#selectedColor").attr('colorname'))
+            corUsada()
+
+                
+
         })
     $("#preview-ladrilho").on("click", "rect", function(){
             $(this).css("fill", $("#selectedColor").val() )
+            $(this).attr("colorname", $("#selectedColor").attr('colorname'))
+            corUsada()
         })
     $("#preview-ladrilho").on("click", "polygon", function(){
             $(this).css("fill", $("#selectedColor").val() )
+            $(this).attr("colorname", $("#selectedColor").attr('colorname'))
+            corUsada()
         })
+
+
+function corUsada() {
+    var cores = new Array();
+    var paleta = "";
+
+    $('svg [colorname]').each(function () {
+        var c = $(this).attr('colorname');
+
+        if ($.inArray(c, cores) < 0) {
+            // console.log("if entrou")
+            cores.push(c);
+            paleta += '<li class="coresUsadas">'+c+'</li>';
+        }
+
+        console.log("c  " + c)
+    });
+    // console.log("if saiu")
+
+    $('#nome-cor').html('<h3 class="titulo-coresUsadas"> Cores Usadas </h3><ul class="paleta disabled">'+paleta+'</ul>');
+}
+
+
+
+
+
 
 
 /*Categoria*/

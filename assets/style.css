@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;500&family=Poppins:wght@300;400;500&display=swap');
 *{
     padding: 0;
     margin: 0 auto;
@@ -146,7 +147,7 @@ body{
 
 #preview-ladrilho{
     width: 432px;
-    height: 432px;
+    min-height: 432px;
     border: 1px solid #dfdfdf;
     cursor: crosshair;
 }
@@ -306,12 +307,71 @@ body{
 }
 
 
+#nome-ladrilho{
+    font-size: 24px;
+    font-weight: 800;
+    color: #e4918a;
+    margin-top: 8px;
+}
+
+.titulo-coresUsadas{
+    font-size: 16px;
+    color: #011627;
+    margin-top: 16px;
+}
+
+.coresUsadas{
+    list-style: none;
+    color: #011627c7;
+
+}
+
+.headline{
+    margin-top: 80px;
+}
+
+.headline h4{
+    text-align: center;
+    color: #3B4A60;
+    text-transform: uppercase;
+    letter-spacing: 16px;
+    font-size: 13px;
+}
+
+.headline h2{
+    text-align: center;
+    color: #c97d77;
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.instrucoes{
+    padding: 30px;
+    margin-top: 32px;
+    background-color: #e9e9e9 !important;
+    margin-bottom: 64px;
+    color: #3b4a60;
+}
+
+.instrucoes h5{
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.instrucoes p{
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
 @media print {
 
     body * {
         visibility: hidden;
       }
-      #preview-ladrilho, #preview-ladrilho * {
+      #preview-ladrilho, #preview-ladrilho  * {
+        visibility: visible;
+      }
+      #nome-ladrilho, #nome-cor  * {
         visibility: visible;
       }
       #preview-ladrilho {
@@ -322,4 +382,93 @@ body{
 }
 /* ===================================PRONTO===================================== */
 
-/* 
+
+@media only screen and (max-width: 600px){
+.container{max-width: 95vw;}
+
+.headline h4{
+
+    letter-spacing: 14px;
+    font-size: 12px;
+}
+
+.headline h2{
+    font-size: 32px;
+    line-height: 40px;
+}
+
+.select{
+    display: block;
+    padding: 40px 20px;
+    overflow-y: scroll;
+    height: 50vh;
+}
+
+.select-filter{
+    display: flex;
+    overflow: scroll;
+
+}
+
+.select-filter > button{
+    padding: 8px 16px;
+    font-size: 14px;
+    margin: 2px;
+}
+
+.select-ladrilhos-miniaturas{
+    gap: 10px;
+}
+
+.thumb-ladrilho {
+    cursor: pointer;
+    width: 48px;}
+
+.min-ladrilhos{
+    width: 48px;
+}
+
+.print{
+    margin: 0;
+}
+
+.preview{
+    flex-direction: column;
+    padding: 40px 20px;
+}
+
+#preview-ladrilho{
+    width: 100%;
+    min-height: 300px;
+}
+
+.button-print, .button-render3d{
+    padding: 16px 24px !important;
+    margin: 8px 0px;
+    width: 100%;
+}
+
+#preview-color{
+    margin-top: 40px;
+    margin-left: 0;
+    width: 100%;
+}
+
+.color{
+    width: 72px;
+}
+
+.picker{
+    width: 72px;
+    height: 72px;
+}
+
+.modal3d{
+    overflow: hidden;
+}
+
+.ladrilar-3d__parede{
+    width: 100%;
+}
+
+}
