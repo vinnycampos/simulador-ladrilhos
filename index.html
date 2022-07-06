@@ -10,7 +10,7 @@
 </head>
 <body>
     <input type="hidden" id="selectedColor" name="selectedColor" value="black" colorName="Preto" />
-    <div class="container">
+    <div id="simulador" class="container sim-loaded">
 
         <div class="headline">
             <h4>Simulador</h4>
@@ -800,10 +800,15 @@
 
         <div class="preview">
             <div class="print">
-                <div id="preview-ladrilho"></div>
+                <div id="ladrilho">
+                    <div id="svg-holder" class="has-corner faixa">
+                        <div id="preview-ladrilho"></div>
+                    </div>
+                </div>
                 <div id="nome-ladrilho"></div>
                 <hr style="border: 0.5px solid #e5e5e5; margin: 5px 0;">
                 <div id="nome-cor"></div>
+                <h6 style="color:#7e7e7e;">*Selecione até 6 cores por ladrilho.*</h6>
                 <button class="button-print"type="button" onclick="printSVG('preview-ladrilho')" value="Baixar Ladrilho" >Baixar Ladrilho</button>
                 <button class="button-render3d" onclick="render3d()">Aplicar Ladrilho</button>
             </div>
@@ -817,7 +822,7 @@
                     <p class="color-name">Verde Abacate</p>
                 </div>
                 <div class="color">
-                    <button class="picker" value="#006400 " color-name="Verde musgo" Verde Abacatstyle="background-color: #006400 ;"></button>
+                    <button class="picker" value="#006400 " color-name="Verde musgo" style="background-color: #006400 ;"></button>
                     <p class="color-name">Verde musgo</p>
                 </div>
                 <div class="color">
@@ -986,6 +991,32 @@
                 </div>
 
             </div> 
+        </div>
+
+        <div id="visualizar">
+            <div class="area-preview vc_column_container vc_col-sm-8">
+                <div id="grade" class="grade hexagonal" data-cols="9" data-rows="4" style="background-color: rgb(68, 85, 77);">
+                    <div class="tile-row tile-row-0 first-row">
+                        <div class="item tile-col tile-col-0 first-col" style="width: 11.11111111111111%; padding: 1px;">
+                            <div class="holder">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mask">
+
+                    </div>
+                </div>
+            </div>
+            <div class="area-options">
+                <h3>Opções de visualização</h3>
+                <form id="preview-options-form">
+                    <p><label>Colunas:</label> 
+                    <input id="option-cols" type="number" min="1" max="10" step="1" value="4"></p>
+                    <p><label>Linhas:</label> 
+                    <input id="option-rows" type="number" min="1" max="10" step="1" value="4"></p>
+                    <p class="p-submit"><input type="submit" value="Visualizar" class="sc_button_hover_slide_left"></p>
+                  </form>
+            </div>
         </div>
 
         <div id="modal-3d" class="ladrilho3d">

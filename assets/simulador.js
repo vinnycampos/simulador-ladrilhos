@@ -6,6 +6,7 @@
         const nomesvg = $(this).attr('alt')
         $("#preview-ladrilho").load(svg)
         $("#nome-ladrilho").html(nomesvg)
+        zeraPaleta()
     });
 
     $('.picker').click(function() {
@@ -18,9 +19,6 @@
             $(this).css("fill", $("#selectedColor").val() )
             $(this).attr("colorname", $("#selectedColor").attr('colorname'))
             corUsada()
-
-                
-
         })
     $("#preview-ladrilho").on("click", "rect", function(){
             $(this).css("fill", $("#selectedColor").val() )
@@ -32,6 +30,12 @@
             $(this).attr("colorname", $("#selectedColor").attr('colorname'))
             corUsada()
         })
+    $("#preview-ladrilho").on("click", "circle", function(){
+            $(this).css("fill", $("#selectedColor").val() )
+            $(this).attr("colorname", $("#selectedColor").attr('colorname'))
+            corUsada()
+        })
+
 
 
 function corUsada() {
@@ -53,7 +57,9 @@ function corUsada() {
 
     $('#nome-cor').html('<h3 class="titulo-coresUsadas"> Cores Usadas </h3><ul class="paleta disabled">'+paleta+'</ul>');
 }
-
+function zeraPaleta() {
+    $('#nome-cor').html('</ul>');
+}
 
 
 
@@ -218,180 +224,409 @@ function fechamodal(){
 	const modal = document.getElementById('modal-3d')
 	modal.classList.remove("mostrar3d")
 }
-    //         var coluna_px = ($(inner_rejuntes).innerWidth() / ladrilhos_colunas.val()) - 4;
-    //         var total_linhas_colunas = ladrilhos_colunas.val() * ladrilhos_linhas.val();
-    //         var html_inner_ladrilhos = $('#preview-ladrilho')[0].innerHTML;
-    //         $(inner_rejuntes).css('background-color', cor_rejunte);
-    //         $(inner_rejuntes).css('border-color', cor_rejunte);
-    //         var html_inner_ladrilhos_ajustado = html_inner_ladrilhos.replace(/432px/g, coluna_px + 'px');
-    //         var item_ladrilhos = '<div class="item-rejunte" style="width: ' + coluna_px + 'px; padding: 1px; margin-right: 2px;"><div class="holder">' + html_inner_ladrilhos_ajustado + '</div></div>';
-    //         var html_ladrilhos = '';
-    //         for (var i = 0; i < total_linhas_colunas; i++) {
-    //             html_ladrilhos += item_ladrilhos;
-    //         }
-    //         html_ladrilhos += '<br style="clear: both;">';
-    //         inner_rejuntes.html(html_ladrilhos);
-    //         rotate();
-    //     }
-
-    // var cor = '';
-    // var item_cor = $('.box-itens-ladrilhos li span');
-    // var view_ladrilhos = $('#view-ladrilhos');
-    // var ladrilhos_colunas = $('#ladrilhos-colunas');
-    // var ladrilhos_linhas = $('#ladrilhos-linhas');
-    // var inner_rejuntes = $('#inner-rejuntes');
-    // var cor_rejunte = '';
-    // var item_cor_rejunte = $('.box-itens-rejuntes li span');
-    // var area_anexado = $('#anexado');
-    // var area_rejunte = $('#rejunte');
-    // var input_modelo = $('#input-modelo');
-    // var nome_cor_rejunte = '';
-
-    // item_cor.click(function() {
-    //     item_cor.each(function() {
-    //         $(this).removeClass('selected');
-    //     });
-    //     $(this).addClass('selected');
-    //     cor = $(this).data('hex');
-    // });
-
-    // // $('.modelo-ladrilho').each(function() {
-    // //     $(this).click(function() {
-    // //         inner_rejuntes[0].innerHTML = inner_rejuntes_default();
-    // //         area_anexado.removeAttr('style');
-    // //         area_anexado[0].innerHTML = '';
-    // //         area_rejunte.removeAttr('style');
-    // //         area_rejunte[0].innerHTML = create_html_rejunte_selected();
-    // //         var modelo = $(this).data('modelo');
-    // //         call_ajax(modelo);
-    // //         input_modelo.val(modelo);
-    // //     });
-    // // });
 
 
-    // view_ladrilhos.click(function() {
-    //     if ($('#preview-ladrilho')[0].innerHTML == "") {
-    //         alert('Primeiro selecione um ladrilho!');
-    //     } else {
-
-    //         if (ladrilhos_colunas.val() == "" || ladrilhos_colunas.val() < 1 || ladrilhos_colunas.val() > 10) {
-    //             alert('O campo colunas aceita valores entre 1 e 10!');
-    //             return;
-    //         }
-    //         if (ladrilhos_linhas.val() == "" || ladrilhos_linhas.val() < 1 || ladrilhos_linhas.val() > 10) {
-    //             alert('O campo linhas aceita valores entre 1 e 10!');
-    //             return;
-    //         }
-    //         // if (cor_rejunte == "") {
-    //         //     alert('Selecione uma cor de rejunte!');
-    //         //     return;
-    //         // }
-
-            
-    //         // if ($('#preview-ladrilho')[0].innerHTML )
-    //         var testFaixas = $('#preview-ladrilho').children()[0];
-    //         if(testFaixas.id === 'faixas'){
-    //             var coluna_px = ($(inner_rejuntes).innerWidth() / 2) - 4;
-    //             var total_linhas_colunas = 4;
-    //             var html_inner_ladrilhos = $('#preview-ladrilho')[0].innerHTML;
-    //             $(inner_rejuntes).css('background-color', cor_rejunte);
-    //             $(inner_rejuntes).css('border-color', cor_rejunte);
-
-    //             var html_inner_ladrilhos_ajustado = html_inner_ladrilhos.replace(/432px/g, coluna_px + 'px');
-
-    //             var item_ladrilhos0 = '<div class="item-rejunte 0" style="width: ' + coluna_px + 'px; height: ' + coluna_px + 'px; padding: 1px; margin-right: 2px;"><div class="holder">' + html_inner_ladrilhos_ajustado + '</div></div>';
-    //             var item_ladrilhos1 = '<div class="item-rejunte 1" style="width: ' + coluna_px + 'px; height: ' + coluna_px + 'px; transform: rotate(90deg); padding: 1px; margin-right: 2px;"><div class="holder">' + html_inner_ladrilhos_ajustado + '</div></div>';
-    //             var item_ladrilhos2 = '<div class="item-rejunte 2" style="width: ' + coluna_px + 'px; height: ' + coluna_px + 'px; transform: rotate(270deg); padding: 1px; margin-right: 2px;"><div class="holder">' + html_inner_ladrilhos_ajustado + '</div></div>';
-    //             var item_ladrilhos3 = '<div class="item-rejunte 3" style="width: ' + coluna_px + 'px; height: ' + coluna_px + 'px; transform: rotate(180deg); padding: 1px; margin-right: 2px;"><div class="holder">' + html_inner_ladrilhos_ajustado + '</div></div>';
-    //             var html_ladrilhos = '';
-
-    //             for (var i = 0; i < total_linhas_colunas; i++) {
-
-    //                 if (i == 0) {
-    //                  html_ladrilhos += item_ladrilhos0;
-    //                 }
-    //                 if (i == 1) {
-    //                  html_ladrilhos += item_ladrilhos1;
-    //                 }
-    //                 if (i == 2) {
-    //                  html_ladrilhos += item_ladrilhos2;
-    //                 }
-    //                 if (i == 3) {
-    //                  html_ladrilhos += item_ladrilhos3;
-    //                 }
-                    
-    //             }
-
-    //             html_ladrilhos += '<br style="clear: both;">';
-    //             inner_rejuntes.html(html_ladrilhos);
-
-    //             return;
-    //         }
-
-    //         var coluna_px = ($(inner_rejuntes).innerWidth() / ladrilhos_colunas.val()) - 4;
-    //         var total_linhas_colunas = ladrilhos_colunas.val() * ladrilhos_linhas.val();
-    //         var html_inner_ladrilhos = $('#preview-ladrilho')[0].innerHTML;
-    //         $(inner_rejuntes).css('background-color', cor_rejunte);
-    //         $(inner_rejuntes).css('border-color', cor_rejunte);
-    //         var html_inner_ladrilhos_ajustado = html_inner_ladrilhos.replace(/432px/g, coluna_px + 'px');
-    //         var item_ladrilhos = '<div class="item-rejunte" style="width: ' + coluna_px + 'px; padding: 1px; margin-right: 2px;"><div class="holder">' + html_inner_ladrilhos_ajustado + '</div></div>';
-    //         var html_ladrilhos = '';
-    //         for (var i = 0; i < total_linhas_colunas; i++) {
-    //             html_ladrilhos += item_ladrilhos;
-    //         }
-    //         html_ladrilhos += '<br style="clear: both;">';
-    //         inner_rejuntes.html(html_ladrilhos);
-    //         rotate();
-    //     }
-
-    // });
-
-    // function rotate() {
-    //     $('.holder').each(function() {
-    //         $(this).click(function() {
-    //             if (this.classList[1] == undefined) {
-    //                 this.classList.add('deg90');
-    //             } else if (this.classList[1] == 'deg90') {
-    //                 this.classList.remove('deg90');
-    //                 this.classList.add('deg180');
-    //             } else if (this.classList[1] == 'deg180') {
-    //                 this.classList.remove('deg180');
-    //                 this.classList.add('deg270');
-    //             } else if (this.classList[1] == 'deg270') {
-    //                 this.classList.remove('deg270');
-    //                 this.classList.add('deg360');
-    //             } else if (this.classList[1] == 'deg360') {
-    //                 this.classList.remove('deg360');
-    //                 this.classList.add('deg90');
-    //             }
-    //         })
-    //     });
-    // }
-
-    // item_cor_rejunte.click(function() {
-    //     item_cor_rejunte.each(function() {
-    //         $(this).removeClass('selected');
-    //     });
-    //     $(this).addClass('selected');
-    //     cor_rejunte = $(this).data('hex');
-    //     nome_cor_rejunte = $(this).next().html();
-    // });
-
-    // function inner_rejuntes_default() {
-    //     $(inner_rejuntes).css('background-color', '#fff');
-    //     $(inner_rejuntes).css('border-color', '#ddd');
-    //     html = '<div class="item-rejunte default" style="width: 25%;"><span></span></div>';
-    //     html_result = '';
-    //     for (i = 0; i <= 15; i++) {
-    //         html_result += html;
-    //     }
-    //     html_result += '<br style="clear: both;">';
-    //     return html_result;
-    // }
 
 
-    // function create_html_rejunte_selected() {
-    //     return '<span style="display: inline-block;">Cor do rejunte:</span><div class="box-rejunte-selected" style="display: inline-block; vertical-align: middle; margin-left: 5px;"><div class="area-rejunte-selected"></div><span class="cor-rejunte-selected"></span></div>';
-    // }
 
 
+
+var $window, $body;
+var ww, wh, wy;
+
+var sim;
+
+var isIE;
+
+var e3d, info3d;
+
+(function($) {
+	
+	//-------------------------DOC READY
+	$(document).ready(function () {
+		
+		$body = $('body');
+		$window = $(window);
+		$header = $('#masthead');
+
+		isIE = $('html').hasClass('no-supports');
+		
+		$('.attachment-woocommerce_thumbnail').on('mouseenter', 
+		function() {
+			let src_split = $(this).attr('src').split('/');
+			let product_name = src_split.slice(-1).pop();
+			product_name = product_name.split('.');
+			let src1 = $(this).attr('srcset');
+			if (img_map_json.hasOwnProperty(product_name[0])) {
+				if (img_map_json[product_name[0]] === 'default') {
+					img2 = get_snd_image(src1);
+				} else {
+					let src1_split = src1.split(" ")
+					src1_split[0] = src1_split[2] = src1_split[4] = img_map_json[product_name[0]][1];
+					img2 = src1_split.join(" ");
+				}
+				$(this).attr('srcset', img2);
+			}
+		}).on('mouseleave',
+		function() {
+			let src_split = $(this).attr('src').split('/');
+			let product_name = src_split.slice(-1).pop();
+			product_name = product_name.split('.');
+			let src2 = $(this).attr('srcset');
+			if (img_map_json.hasOwnProperty(product_name[0])) {
+				if (img_map_json[product_name[0]] === 'default') {
+					img1 = get_fst_image(src2);
+				} else {
+					let src2_split = src2.split(" ")
+					src2_split[0] = src2_split[2] = src2_split[4] = img_map_json[product_name[0]][0];
+					img1 = src2_split.join(" ");
+				}
+				$(this).attr('srcset', img1);
+			}
+		});
+		
+		$('.search_field').attr('placeholder', 'Pesquisar');
+		$('.widget_product_categories .widget_title').text('Categorias');
+
+		if ($('#simulador').length > 0) {
+			sim = {
+				e: $('#simulador'),
+				paleta: $('#preview-color'),
+				ladrilho: $('#ladrilho'),
+				dwld_btn: $('btn-salvar-ladrilho'),
+				grade: $('#grade'),
+				select: $('#select-ladrilho')
+			};
+			configurar_visualizar_ladrilho ();
+			// configurar_simulador_3d();
+		}
+	});
+
+	function configurar_visualizar_ladrilho () {
+		sim.e.find('#preview-options-form').on('click', visualizar_ladrilho_na_grade);
+	}
+
+	function visualizar_ladrilho_na_grade (event) {
+		event.preventDefault();
+
+		var $holder = sim.grade;
+		var f = $(this);
+		var args = {
+			cols: f.find('#option-cols').val(),
+			rows: f.find('#option-rows').val(),
+			bg: f.find('.paleta .selected .swatch').attr('data-hex'),
+			gap: '1px'
+		}
+		gera_grid_do_ladrilho(args, $holder);
+		arruma_encaixe_hexagonal ($holder);
+	}
+
+
+	function gera_grid_do_ladrilho (args, $holder, simulador3d) {
+
+		simulador3d = simulador3d == true;
+
+		var svg_holder = sim.ladrilho.find('#svg-holder');
+		
+		var is_hexagonal = svg_holder.hasClass('shape-hexagonal');
+		var is_faixa = svg_holder.hasClass('faixa');
+		var is_florao = svg_holder.hasClass('florao');
+		var is_florao_espelhado = svg_holder.hasClass('florao-espelhado');
+		var is_tozeto = svg_holder.hasClass('tozeto');
+		var has_corner = svg_holder.hasClass('has-corner');
+
+		var cols = is_tozeto? simulador3d? Math.round(args.cols*2) : args.cols*2 : args.cols;
+		var rows = is_tozeto? simulador3d? Math.round(args.rows*2) : args.rows*2 : args.rows;
+		//var gap = is_tozeto && simulador3d? '0' : args.gap;
+		var gap = args.gap;
+		var bg = args.bg;
+
+		var html = '<div class="tile-row tile-row-0 first-row">';
+		var svg = svg_holder.find('#preview-ladrilho').html();
+		var svg_corner = has_corner? svg_holder.find('#svg-corner').html() : false;
+
+		var tile = svg;
+		var tile_w = (100/cols)-0.25;
+
+		//
+		$holder.toggleClass('hexagonal', is_hexagonal);
+		$holder.toggleClass('faixa', is_faixa);
+		$holder.toggleClass('florao', is_florao);
+		$holder.toggleClass('florao-espelhado', is_florao_espelhado);
+		$holder.toggleClass('tozeto', is_tozeto);
+		$holder.toggleClass('has-corner', has_corner);
+
+		$holder.attr('data-cols', cols);
+		$holder.attr('data-rows', rows);
+
+		$holder.css('background-color', bg);
+
+		for (var r = 0; r < rows; r++) {
+			for (var c = 0; c < cols; c++) {
+
+				var classes = ['item', 'tile-col', 'tile-col-'+c];
+				if (c === 0) classes.push('first-col');
+				if (c === cols - 1) classes.push('last-col');
+
+				//classe empty recheio da faixa
+				if (is_faixa &&
+					r > 0 && r < rows - 1 &&
+					c > 0 && c < cols -1
+				) {
+					classes.push('empty-tile');
+					//cl('empty');
+				}
+
+				//classe pros cantos
+				if (has_corner &&
+					 (r === 0 || r === rows - 1) && 
+					 (c === 0 || c === cols -1)
+				) {
+					classes.push('corner-tile');
+					tile = svg_corner;
+					//cl('corner');
+				} else {
+					tile = svg;
+					//cl('normal');
+				}
+
+				html += '<div class="'+ classes.join(' ') + '" style="width: ' + tile_w + '%; padding: ' + gap + ';"><div class="holder">'+ tile +'</div></div>';
+
+				//fecha row e abre nova
+				if (c === cols -1) {
+					var row_ix = r + 1;
+					var row_classes = ['tile-row', 'tile-row-'+row_ix];
+					//if (row_ix === 0) row_classes.push('first-row');
+
+					if (row_ix === rows - 1) row_classes.push('last-row');
+
+					html += '</div>';
+
+					if (row_ix < rows) {
+						html += '<div class="'+row_classes.join(' ')+'">';
+					}
+				}
+			}
+		}
+
+		if (is_hexagonal) {
+			html += '<div class="mask"></div>';
+		}
+		$holder.html(html);
+		//ARRUMA ENCAIXE DAS FILEIRAS DO HEXAGONAL
+		arruma_encaixe_hexagonal ($holder);
+	}
+
+
+	function arruma_encaixe_hexagonal ($holder) {
+		if ($holder.hasClass('hexagonal')) {
+
+			var tile = $holder.find('.item').eq(0);
+			var tile_h = tile.height();
+			var tile_w = tile.width();
+
+			// cl('tile dim: ' + tile_w + ' x ' + tile_h);
+
+			$holder.find('.tile-row').each(function (ix) {
+				var g = $(this);
+				if (ix > 0) {
+					g.css('top', ((tile_h/4) * ix) * -1);
+				}
+				if (ix % 2) {
+					g.css('left', (tile_w/2) * -1);
+				}
+			});
+		}
+	}
+	function arruma_encaixe_hexagonal_simulador ($holder, w, cols) {
+		if ($holder.hasClass('hexagonal')) {
+
+			var tile_w = w/cols;
+			var tile_h = tile_w;
+
+			$holder.find('.tile-row').each(function (ix) {
+				var g = $(this);
+				if (ix > 0) {
+					g.css('top', ((tile_h/4) * ix) * -1);
+				}
+				if (ix % 2) {
+					g.css('left', (tile_w/2) * -1);
+				}
+// 				console.log(g.css('top'))
+			});
+		}
+	}
+
+    function cl (str) {
+		if (window.console && bloginfo.debug) console.log(str);
+	}
+
+
+// 	function configurar_simulador_3d () {
+
+// 		e3d = {};
+
+// 		e3d.info = {
+// 			sala: {
+// 				file: bloginfo.url.tpl + '/assets/images/3d-low/ladrilar-3d-sala.png',
+// 				w: 1200,
+// 				h: 1200,
+// 				cols: 20,
+// 				rows: 20,
+// 				coords: {"topLeft":{"x":-0.016444483333333332,"y":0.3233333333333333},"topRight":{"x":0.8835554999999999,"y":0.17666666666666667},"bottomLeft":{"x":-0.7913333333333333,"y":2.02},"bottomRight":{"x":2.6669999166666667,"y":1.1116666666666666}}
+// 			},
+// 			cozinha: {
+// 				file: bloginfo.url.tpl + '/assets/images/3d-low/ladrilar-3d-cozinha.png',
+// 				w: 1200,
+// 				h: 800,
+// 				cols: 20,
+// 				rows: 16,
+// 				coords: {"topLeft":{"x":-0.21399983333333333,"y":0.76},"topRight":{"x":0.6776666666666668,"y":0.2999975},"bottomLeft":{"x":0.316,"y":1.5775},"bottomRight":{"x":1.4226666666666667,"y":0.7225}}
+// 			},
+// 			banheiro: {
+// 				file: bloginfo.url.tpl + '/assets/images/3d-low/ladrilar-3d-banheiro.png',
+// 				w: 1200,
+// 				h: 800,
+// 				cols: 26,
+// 				rows: 16,
+// 				coords: {"topLeft":{"x":-0.14266666666666666,"y":0.5},"topRight":{"x":1.109,"y":0.5},"bottomLeft":{"x":-0.6226666666666667,"y":1.23},"bottomRight":{"x":1.619,"y":1.23}}
+// 			},
+// 			parede: {
+// 				file: bloginfo.url.tpl + '/assets/images/3d-low/ladrilar-3d-parede.png',
+// 				w: 1200,
+// 				h: 1200,
+// 				cols: 15,
+// 				rows: 15,
+// 				coords: {"topLeft":{"x":-0.06666666666666667,"y":-0.06666666666666667},"topRight":{"x":1.0666666666666667,"y":-0.06666666666666667},"bottomLeft":{"x":-0.06666666666666667,"y":1.0666666666666667},"bottomRight":{"x":1.0666666666666667,"y":1.0666666666666667}}
+// 			}
+// 		};
+
+		
+// 		e3d.buttons = $('.ladrilar-3d__selectors button');
+// 		e3d.parent = $('#ladrilar-3d');
+// 		e3d.display = $('#ladrilar-3d-display').attr('class', 'tipo-'+ e3d.key);
+// 		e3d.ladrilhos_holder = 	e3d.display.find('.ladrilar-3d__ladrilhos');
+// 		e3d.svg_holder = e3d.ladrilhos_holder.find('.grade');
+// 		e3d.img_holder = e3d.display.find('.ladrilar-3d__image');
+// 		e3d.f = $('#preview-options-form');
+
+// 		e3d.args = {};
+// 		e3d.tipo = null;
+// 		e3d.key = null;
+// 		e3d.transform;
+// 		e3d.imgID = 'img-3d';
+
+// 		e3d.buttons.on('click', selecionou_ambiente_3d);
+// 	}
+
+// 	function selecionou_ambiente_3d (event) {
+// 		event.preventDefault();
+
+// 		e3d.key = $(this).val();
+// 		e3d.tipo = e3d.info[e3d.key];
+// 		e3d.imgID = 'img-3d';
+
+
+// 		if ($('#ladrilho svg').length <= 0 || e3d.parent.hasClass('disabled')) {
+// 			return;
+// 		}
+
+// 		e3d.parent.addClass('disabled opening');
+
+// 		//GRID LADRILHOS
+// 		e3d.args = {
+// 			cols: e3d.tipo.cols,
+// 			rows: e3d.tipo.rows,
+// 			bg: e3d.f.find('.paleta .selected .swatch').attr('data-hex'),
+// 			gap: '.04rem' //'0 1px 1px 0'
+// 		}
+
+// 		//IMAGEM
+// 		e3d.img_holder.html('<img src="'+e3d.tipo.file+'" alt="" class="ladrilar-3d__'+e3d.key+'" id="'+ e3d.imgID +'">');
+
+// 		e3d.img_holder.find("#" + e3d.imgID).one("load", function() {
+			
+// 			gera_grid_do_ladrilho(e3d.args, e3d.svg_holder, true);
+
+// 			var w = e3d.img_holder.width() == 0? fixSized[e3d.key].width: e3d.img_holder.width();
+// 			var h = e3d.img_holder.height() == 0? fixSized[e3d.key].height: e3d.img_holder.height();
+			
+// 			//PERSPECTIVE
+// 			e3d.transform = new PerspectiveTransform(e3d.svg_holder.get(0), w, h, false);
+
+// 			e3d.transform.topLeft.x = e3d.tipo.coords.topLeft.x*w;
+// 			e3d.transform.topLeft.y = e3d.tipo.coords.topLeft.y*h;
+// 			e3d.transform.topRight.x = e3d.tipo.coords.topRight.x*w;
+// 			e3d.transform.topRight.y = e3d.tipo.coords.topRight.y*h;
+// 			e3d.transform.bottomLeft.x = e3d.tipo.coords.bottomLeft.x*w;
+// 			e3d.transform.bottomLeft.y = e3d.tipo.coords.bottomLeft.y*h;
+// 			e3d.transform.bottomRight.x = e3d.tipo.coords.bottomRight.x*w;
+// 			e3d.transform.bottomRight.y = e3d.tipo.coords.bottomRight.y*h;
+
+// 			e3d.transform.update();
+
+// 			arruma_encaixe_hexagonal_simulador (e3d.svg_holder, w, e3d.args.cols);
+			
+// 			e3d.display.addClass('loaded');
+			
+// 		}).each(function() {
+// 			if(this.complete) $(this).load();
+// 		});
+
+// 		//ABRE MODAL
+// 		$.fancybox.open({
+// 			src  : '#'+ e3d.display.attr('id'),
+// 			type : 'inline',
+// 			opts : {
+// 				afterClose: function () {
+// 					e3d.transform = null;
+// 					$("#" + e3d.imgID).remove();
+// 					e3d.img_holder.add(e3d.svg_holder).empty();
+// 					e3d.display.attr('class', 'tipo-undefined');
+// 					e3d.parent.removeClass('disabled opening');
+// 				}
+// 			}
+// 		});
+// 	}
+
+// 	//-------------------------------AUX
+// 	function cl (str) {
+// 		if (window.console && bloginfo.debug) console.log(str);
+// 	}
+	
+	
+// const fixSized = {
+// 			'sala': {
+// 				'cols': 20,
+// 				'width': 600,
+// 				'height': 600
+// 			},
+// 			'banheiro': {
+// 				'cols': 26,
+// 				'width': 900,
+// 				'height': 600
+// 			},
+// 			'cozinha': {
+// 				'cols': 20,
+// 				'width': 900,
+// 				'height': 600
+// 			},
+// 			'parede': {
+// 				'cols': 15,
+// 				'width': 600,
+// 				'height': 600
+// 			},
+// }
+
+// $('.download-image').click(function(e) {
+//     e.preventDefault();
+// 	let linkImage = $(this).attr('data-link');
+// //     window.location.href = linkImage;
+//        window.open(
+// 	  linkImage,
+// 	  '_blank' 
+// 	   );
+// });
+
+
+})(jQuery);
