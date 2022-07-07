@@ -14,6 +14,18 @@
         $("#selectedColor").attr("colorName", $(this).attr("color-name"))
     });
 
+
+	/*
+		Clico para adicionar
+		Verifico o tipo
+		Adiciono o tipo na classe do ID "svg-holder"
+
+
+		Se for faixa
+
+		Adiciona a classe "has-corner" && "faixa"
+		*/
+
 /*Colorindo*/
     $("#preview-ladrilho").on("click", "path", function(){
             $(this).css("fill", $("#selectedColor").val() )
@@ -343,7 +355,8 @@ var e3d, info3d;
 
 		var html = '<div class="tile-row tile-row-0 first-row">';
 		var svg = svg_holder.find('#preview-ladrilho').html();
-		var svg_corner = has_corner? svg_holder.find('#svg-corner').html() : false;
+		var svg_faixa = svg_holder.find('#preview-ladrilho #faixa').html();
+		var svg_corner = has_corner? svg_holder.find('#preview-ladrilho #canto').html() : false;
 
 		var tile = svg;
 		var tile_w = (100/cols)-0.25;
@@ -374,6 +387,7 @@ var e3d, info3d;
 					c > 0 && c < cols -1
 				) {
 					classes.push('empty-tile');
+
 					//cl('empty');
 				}
 
@@ -386,11 +400,13 @@ var e3d, info3d;
 					tile = svg_corner;
 					//cl('corner');
 				} else {
-					tile = svg;
+					tile = svg_faixa;
+					// tile = svg;
 					//cl('normal');
 				}
 
-				html += '<div class="'+ classes.join(' ') + '" style="width: ' + tile_w + '%; padding: ' + gap + ';"><div class="holder">'+ tile +'</div></div>';
+				// html += '<div class="'+ classes.join(' ') + '" style="width: ' + tile_w + '%; padding: ' + gap + ';"><div class="holder">'+ tile +'</div></div>';
+				html += '<div class="'+ classes.join(' ') + '" style="width: ' + tile_w + '%; height: ' + tile_w + '%; padding: ' + gap + ';"><div class="holder">'+ '<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">' + tile + '</svg>' +'</div></div>';
 
 				//fecha row e abre nova
 				if (c === cols -1) {
