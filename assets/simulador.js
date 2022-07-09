@@ -1,12 +1,41 @@
+
 (function() {
 
 /*Pega o clicado e renderiza*/
     $('img.min-ladrilhos').click(function() { 
         const svg = $(this).attr('src');
+		const faixaRender = svg.replace(".svg", '.html')
         const nomesvg = $(this).attr('alt')
-        $("#preview-ladrilho").load(svg)
-        $("#nome-ladrilho").html(nomesvg)
-        zeraPaleta()
+        const verifyType = $(this).attr('type')
+
+		if(verifyType === "faixa"){
+			$("#preview-ladrilho").load(faixaRender)
+			$("#svg-holder").attr('class', 'has-corner divide faixa')
+			$("#nome-ladrilho").html(nomesvg)
+			zeraPaleta()
+		}
+		else if(verifyType === "normal"){
+        	$("#svg-corner").remove()
+			$("#svg-holder").attr('class', '')
+        	$("#svg-primary").load(svg)
+        	$("#nome-ladrilho").html(nomesvg)
+        	zeraPaleta()
+		}
+		else if(verifyType === "hexagonal"){
+        	$("#svg-corner").remove()
+			$("#svg-holder").attr('class', 'shape-hexagonal')
+        	$("#svg-primary").load(svg)
+        	$("#nome-ladrilho").html(nomesvg)
+        	zeraPaleta()
+		}
+
+		else{
+        	$("#svg-corner").remove()
+			$("#svg-holder").attr('class', 'florao')
+        	$("#svg-primary").load(svg)
+        	$("#nome-ladrilho").html(nomesvg)
+        	zeraPaleta()
+		}
     });
 
     $('.picker').click(function() {
@@ -27,22 +56,25 @@
 		*/
 
 /*Colorindo*/
-    $("#preview-ladrilho").on("click", "path", function(){
+	$('#svg-holder').click(function(){console.log('click ' + this)})
+    $("#svg-holder").on("click", "path", function(){
+		console.log('ew' + this)
             $(this).css("fill", $("#selectedColor").val() )
             $(this).attr("colorname", $("#selectedColor").attr('colorname'))
             corUsada()
         })
-    $("#preview-ladrilho").on("click", "rect", function(){
+
+    $("#svg-holder").on("click", "rect", function(){
             $(this).css("fill", $("#selectedColor").val() )
             $(this).attr("colorname", $("#selectedColor").attr('colorname'))
             corUsada()
         })
-    $("#preview-ladrilho").on("click", "polygon", function(){
+    $("#svg-holder").on("click", "polygon", function(){
             $(this).css("fill", $("#selectedColor").val() )
             $(this).attr("colorname", $("#selectedColor").attr('colorname'))
             corUsada()
         })
-    $("#preview-ladrilho").on("click", "circle", function(){
+    $("#svg-holder").on("click", "circle", function(){
             $(this).css("fill", $("#selectedColor").val() )
             $(this).attr("colorname", $("#selectedColor").attr('colorname'))
             corUsada()
@@ -354,9 +386,8 @@ var e3d, info3d;
 		var bg = args.bg;
 
 		var html = '<div class="tile-row tile-row-0 first-row">';
-		var svg = svg_holder.find('#preview-ladrilho').html();
-		var svg_faixa = svg_holder.find('#preview-ladrilho #faixa').html();
-		var svg_corner = has_corner? svg_holder.find('#preview-ladrilho #canto').html() : false;
+		var svg = svg_holder.find('#svg-primary').html();
+		var svg_corner = has_corner? svg_holder.find('#svg-corner').html() : false;
 
 		var tile = svg;
 		var tile_w = (100/cols)-0.25;
@@ -400,13 +431,11 @@ var e3d, info3d;
 					tile = svg_corner;
 					//cl('corner');
 				} else {
-					tile = svg_faixa;
-					// tile = svg;
+					tile = svg;
 					//cl('normal');
 				}
 
-				// html += '<div class="'+ classes.join(' ') + '" style="width: ' + tile_w + '%; padding: ' + gap + ';"><div class="holder">'+ tile +'</div></div>';
-				html += '<div class="'+ classes.join(' ') + '" style="width: ' + tile_w + '%; height: ' + tile_w + '%; padding: ' + gap + ';"><div class="holder">'+ '<svg xmlns="http://www.w3.org/2000/svg" width="300" height="300">' + tile + '</svg>' +'</div></div>';
+				html += '<div class="'+ classes.join(' ') + '" style="width: ' + tile_w + '%; padding: ' + gap + ';"><div class="holder">'+ tile +'</div></div>';
 
 				//fecha row e abre nova
 				if (c === cols -1) {

@@ -1,1 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 432 432"><defs><style>.a{fill:#084d6e;}.b{fill:#4682b4;}.c{fill:#fff;}</style></defs><title>1620</title><rect class="a" width="431.59" height="431.59"/><rect class="b" y="64.29" width="367.29" height="367.29"/><rect class="c" y="129.78" width="301.81" height="301.81"/><rect class="a" x="151.57" y="156.11" width="124.47" height="124.47" transform="translate(-91.77 215.13) rotate(-45)"/><polygon class="a" points="107.71 218.34 0 306.9 0 218.34 0 129.78 107.71 218.34"/><polygon class="a" points="301.37 431.63 213.54 431.83 125.7 431.91 213.71 326.12 301.37 431.63"/><rect class="b" y="304.53" width="127.53" height="127.53"/><rect class="a" y="370.88" width="60.71" height="60.71"/></svg>
+<svg viewBox="0 0 432 432" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_16_475)">
+<path d="M-0.000152588 0H431.59V431.59H-0.000152588V0Z" fill="#084D6E"/>
+<path d="M64.2998 64.29H431.59V431.58H64.2998V64.29Z" fill="#4682B4"/>
+<path d="M129.78 129.78H431.59V431.59H129.78V129.78Z" fill="white"/>
+<path d="M217.783 130.327L305.797 218.34L217.783 306.354L129.77 218.34L217.783 130.327Z" fill="#084D6E"/>
+<path d="M323.88 218.34L431.59 306.9V218.34V129.78L323.88 218.34Z" fill="#084D6E"/>
+<path d="M130.22 431.63L218.05 431.83L305.89 431.91L217.88 326.12L130.22 431.63Z" fill="#084D6E"/>
+<path d="M304.06 304.53H431.59V432.06H304.06V304.53Z" fill="#4682B4"/>
+<path d="M370.88 370.88H431.59V431.59H370.88V370.88Z" fill="#084D6E"/>
+</g>
+<defs>
+<clipPath id="clip0_16_475">
+<rect width="432" height="432" fill="white"/>
+</clipPath>
+</defs>
+</svg>
