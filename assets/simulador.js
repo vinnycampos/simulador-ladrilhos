@@ -532,7 +532,7 @@ var e3d, info3d;
 
 		e3d.info = {
 			sala: {
-				file:'./imagens3d/sala.png',
+				file:'http://127.0.0.1:5500/assets/imagens3d/sala.png',
 				w: 1200,
 				h: 1200,
 				cols: 20,
