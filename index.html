@@ -5,8 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/style.css">
-
+    <link property="stylesheet" rel="stylesheet" id="fancyapps-css" href="./assets/fancybox.min.css" type="text/css" media="all">
+    <script src="./assets/PerspectiveTransform.js"></script>
+    
     <title>Simulador</title>
+    
 </head>
 <body>
     <input type="hidden" id="selectedColor" name="selectedColor" value="black" colorName="Preto" />
@@ -15,16 +18,17 @@
         <div class="headline">
             <h4>Simulador</h4>
            <h2>Crie seu ladrilho customizado</h2> 
-            <div class="instrucoes">
-                <h5 style="text-align: left;">Passo-a-passo:</h5>
+           <div class="instrucoes">
+               <h5 style="text-align: left;">Passo-a-passo:</h5>
                 <p><strong>1º.</strong>&nbsp;<strong>Escolha um modelo</strong> de ladrilho para customizar.</p>
                 <p><strong>2º.</strong>&nbsp;<strong>Clique em uma cor</strong> para deixá-la selecionada e,<strong> clique nas áreas do ladrilho</strong> que deseja aplicar a cor. Após a customização, role a página e clique em “<strong>Aplicar Ladrilho</strong>” para ver o ladrilho aplicado em uma imagem.</p>
                 <p><strong>3º.</strong> Quando terminar, você pode clicar no botão para <strong>salvar ou imprimir</strong>&nbsp;seu ladrilho customizado. O navegador irá abrir uma janela com a possibilidade de salvar o arquivo em PDF ou enviá-lo para sua impressora.</p>
-    
+                
             </div>
         </div>
 
         <div class="select">
+
 
             <!-- Quando clicar troca a classe para active no botão, e nos ladrilhos -->
             <div class="select-filter">
@@ -784,7 +788,6 @@
                 <div id="nome-cor"></div>
                 <h6 style="color:#7e7e7e;">*Selecione até 6 cores por ladrilho.*</h6>
                 <button class="button-print"type="button" onclick="printSVG('preview-ladrilho')" value="Baixar Ladrilho" >Baixar Ladrilho</button>
-                <button class="button-render3d" onclick="render3d()">Aplicar Ladrilho</button>
             </div>
             <div id="preview-color">
                 <div class="color">
@@ -969,7 +972,7 @@
 
         <div id="visualizar">
             <div class="area-preview vc_column_container vc_col-sm-8">
-                <div id="grade" class="grade hexagonal" data-cols="9" data-rows="4" style="background-color: #dddddd;">
+                <div id="grade" class="grade" data-cols="9" data-rows="4" style="background-color: #dddddd;">
                     <div class="tile-row tile-row-0 first-row">
                         <div class="item tile-col tile-col-0 first-col" style="width: 11.11111111111111%; padding: 1px;">
                             <div class="holder">
@@ -1002,11 +1005,30 @@
                 </div>
             </div>
         </div>
+
+        <div id="ladrilar-3d" class="ladrilar-3d">
+            <h3 class="title-3d"><span>Simulação 3d</span></h3>
+            <p>Escolha um dos ambientes para visualizar seu ladrilho em uma simulação 3D.</p>
+            <ul class="ladrilar-3d__selectors">
+              <li><button type="button" value="sala" class="sc_button_hover_slide_left">Sala</button></li>
+              <li><button type="button" value="banheiro" class="sc_button_hover_slide_left">Banheiro</button></li>
+              <li><button type="button" value="cozinha" class="sc_button_hover_slide_left">Cozinha</button></li>
+              <li><button type="button" value="parede" class="sc_button_hover_slide_left">Parede</button></li>
+              <li><button type="button" value="externa" class="sc_button_hover_slide_left">Externa</button></li>
+            </ul>
+            <div id="ladrilar-3d-display" style="display: none;" class="tipo-undefined">
+              <div class="ladrilar-3d__holder">
+                <div class="ladrilar-3d__image"></div>
+                <div class="ladrilar-3d__ladrilhos"><div class="grade" data-cols="20" data-rows="16" style="background-color: rgb(68, 85, 77); transform: matrix3d(0.991573, -0.358645, 0, 0.000270979, 0.94778, 0.469852, 0, -0.000617973, 0, 0, 1, 0, 47.1684, 145.464, 0, 1);"></div></div>
+              </div>
+            </div><!-- ladrilar 3d display -->
+          </div>
     </div>
 
-
-
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="./assets/fancybox.min.js" id="fancyapps-js"></script>
     <script src="./assets/simulador.js"></script>
+    
+    
 </body>
 </html>
