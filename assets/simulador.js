@@ -1,6 +1,27 @@
 
 (function() {
 
+	
+function corUsada() {
+    var cores = new Array();
+    var paleta = "";
+
+    $('svg [colorname]').each(function () {
+        var c = $(this).attr('colorname');
+
+        if ($.inArray(c, cores) < 0) {
+            cores.push(c);
+            paleta += '<li class="coresUsadas">'+c+'</li>';
+        }
+    });
+
+    $('#nome-cor').html('<h3 class="titulo-coresUsadas"> Cores Usadas </h3><ul class="paleta disabled">'+paleta+'</ul>');
+}
+function zeraPaleta() {
+    $('#nome-cor').html('</ul>');
+}
+
+
 /*Pega o clicado e renderiza*/
     $('img.min-ladrilhos').click(function() { 
         const svg = $(this).attr('src');
@@ -10,6 +31,7 @@
 
 		if(verifyType === "faixa"){
 			$("#preview-ladrilho").load(faixaRender)
+			$("#grade").html("")
 			$("#svg-holder").attr('class', 'has-corner divide faixa')
 			$("#nome-ladrilho").html(nomesvg)
 			$("#ladrilar-3d").css("display", "none")
@@ -17,6 +39,7 @@
 		}
 		else if(verifyType === "normal"){
         	$("#svg-corner").remove()
+			$("#grade").html("")
 			$("#svg-holder").attr('class', '')
         	$("#svg-primary").load(svg)
         	$("#nome-ladrilho").html(nomesvg)
@@ -25,6 +48,7 @@
 		}
 		else if(verifyType === "hexagonal"){
         	$("#svg-corner").remove()
+			$("#grade").html("")
 			$("#svg-holder").attr('class', 'shape-hexagonal')
         	$("#svg-primary").load(svg)
         	$("#nome-ladrilho").html(nomesvg)
@@ -34,6 +58,7 @@
 
 		else{
         	$("#svg-corner").remove()
+			$("#grade").html("")
 			$("#svg-holder").attr('class', 'florao')
         	$("#svg-primary").load(svg)
         	$("#nome-ladrilho").html(nomesvg)
@@ -48,21 +73,8 @@
     });
 
 
-	/*
-		Clico para adicionar
-		Verifico o tipo
-		Adiciono o tipo na classe do ID "svg-holder"
-
-
-		Se for faixa
-
-		Adiciona a classe "has-corner" && "faixa"
-		*/
-
 /*Colorindo*/
-	$('#svg-holder').click(function(){console.log('click ' + this)})
     $("#svg-holder").on("click", "path", function(){
-		console.log('ew' + this)
             $(this).css("fill", $("#selectedColor").val() )
             $(this).attr("colorname", $("#selectedColor").attr('colorname'))
             corUsada()
@@ -83,35 +95,11 @@
             $(this).attr("colorname", $("#selectedColor").attr('colorname'))
             corUsada()
         })
-
-
-
-function corUsada() {
-    var cores = new Array();
-    var paleta = "";
-
-    $('svg [colorname]').each(function () {
-        var c = $(this).attr('colorname');
-
-        if ($.inArray(c, cores) < 0) {
-            // console.log("if entrou")
-            cores.push(c);
-            paleta += '<li class="coresUsadas">'+c+'</li>';
-        }
-
-        console.log("c  " + c)
-    });
-    // console.log("if saiu")
-
-    $('#nome-cor').html('<h3 class="titulo-coresUsadas"> Cores Usadas </h3><ul class="paleta disabled">'+paleta+'</ul>');
-}
-function zeraPaleta() {
-    $('#nome-cor').html('</ul>');
-}
-
-
-
-
+    $("#svg-holder").on("click", "polyline", function(){
+            $(this).css("fill", $("#selectedColor").val() )
+            $(this).attr("colorname", $("#selectedColor").attr('colorname'))
+            corUsada()
+        })
 
 
 /*Categoria*/
@@ -208,7 +196,6 @@ function zeraPaleta() {
             if(tabVal == "exclusivos"){
                 exclusivo.forEach((exclusivos) => {
                     exclusivos.classList.add("active")
-                    console.log('foi')
                     exclusivos.classList.remove("inactive")
                 })
                 return;
@@ -243,41 +230,6 @@ function printSVG(preview){
     // Remove div once printed
     $print.remove();
 }
-
-// //verificar de é faixa, se for desabilitar botão 3d
-
-// function render3d() {
-// 	iniciamodal()
-//     var inner_rejuntes = $('#preview3d');
-//     var coluna_px = ($(".imagem3d").innerWidth() / 24) + -18.5;
-//     var total_linhas_colunas = 24 * 12;
-//     var html_inner_ladrilhos = $('#preview-ladrilho')[0].innerHTML;
-//     var html_inner_ladrilhos_ajustado = html_inner_ladrilhos.replace(/432px/g, coluna_px + 'px');
-//     var item_ladrilhos = '<div class="item-rejunte" style="width: 32.333333px; height: 32.33333px; padding: 0.5px; margin: 0px;"><div class="holder">' + html_inner_ladrilhos_ajustado + '</div></div>';
-//     var html_ladrilhos = '';
-//     for (var i = 0; i < total_linhas_colunas; i++) {
-//         html_ladrilhos += item_ladrilhos;
-//     }
-//     html_ladrilhos += '<br style="clear: both;">';
-//     inner_rejuntes.html(html_ladrilhos);
-// }
-
-
-// function iniciamodal(){
-// 	const modal = document.getElementById('modal-3d')
-// 	modal.classList.add("mostrar3d");
-// }
-
-// function fechamodal(){
-// 	const modal = document.getElementById('modal-3d')
-// 	modal.classList.remove("mostrar3d")
-// }
-
-
-
-
-
-
 
 var $window, $body;
 var ww, wh, wy;
@@ -395,7 +347,16 @@ var e3d, info3d;
 		var svg_corner = has_corner? svg_holder.find('#svg-corner').html() : false;
 
 		var tile = svg;
-		var tile_w = (100/cols)-0.30;
+		var tile_w = (100/cols)-1;
+		var tela = window.screen.width;
+		console.log(tela)
+		if (tela <= 600){
+			var tile_w = (100/cols)-1;
+		}
+		else{
+			var tile_w = (100/cols)-0.30;
+		}
+		// var tile_w = (100/cols)-0.30;
 
 		//
 		$holder.toggleClass('hexagonal', is_hexagonal);
@@ -502,15 +463,9 @@ var e3d, info3d;
 				if (ix % 2) {
 					g.css('left', (tile_w/2) * -1);
 				}
-// 				console.log(g.css('top'))
 			});
 		}
 	}
-
-    // function cl (str) {
-	// 	if (window.console && bloginfo.debug) console.log(str);
-	// }
-
 
 
 
@@ -598,7 +553,6 @@ var e3d, info3d;
 
 	function selecionou_ambiente_3d (event) {
 		event.preventDefault();
-		console.log("entrou")
 
 		e3d.key = $(this).val();
 		e3d.tipo = e3d.info[e3d.key];
@@ -669,11 +623,6 @@ var e3d, info3d;
 		});
 	}
 
-	// //-------------------------------AUX
-	// function cl (str) {
-	// 	if (window.console && bloginfo.debug) console.log(str);
-	// }
-	
 	
 const fixSized = {
 			'sala': {

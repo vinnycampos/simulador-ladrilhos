@@ -375,8 +375,6 @@ body{
 }
 
 
-
-
 #visualizar{
     display: flex;
     margin: 50px 0;
@@ -703,11 +701,10 @@ body{
   top: 2.2%;
 }
 
-@media screen and (max-width: 700px),
-       screen and (max-height: 600px) {
-    #ladrilar-3d-display .ladrilar-3d__ladrilhos .grade .holder {
-      transform: scale(1.05);
-    }
+@media only screen and (max-width: 700px){
+    #ladrilar-3d {
+      display: none;
+    } 
 }
 
 
@@ -743,7 +740,7 @@ body{
 /* ===================================PRONTO===================================== */
 
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 700px){
 .container{max-width: 95vw;}
 
 .headline h4{
@@ -830,5 +827,21 @@ body{
 .ladrilar-3d__parede{
     width: 100%;
 }
+
+#visualizar{
+  flex-direction: column;
+  padding: 40px 20px;
+}
+
+#visualizar .area-preview {
+  width: 100%;
+}
+
+#visualizar .area-options {
+  width: 100%;
+  margin-top: 32px;
+}
+
+
 
 }
