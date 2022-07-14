@@ -55,6 +55,15 @@ function zeraPaleta() {
 			$("#ladrilar-3d").css("display", "block")
         	zeraPaleta()
 		}
+		else if(verifyType === "florao-espelhado"){
+        	$("#svg-corner").remove()
+			$("#grade").html("")
+			$("#svg-holder").attr('class', 'florao 	florao-espelhado')
+        	$("#svg-primary").load(svg)
+        	$("#nome-ladrilho").html(nomesvg)
+			$("#ladrilar-3d").css("display", "block")
+        	zeraPaleta()
+		}
 
 		else{
         	$("#svg-corner").remove()
@@ -77,27 +86,33 @@ function zeraPaleta() {
     $("#svg-holder").on("click", "path", function(){
             $(this).css("fill", $("#selectedColor").val() )
             $(this).attr("colorname", $("#selectedColor").attr('colorname'))
+			$("#grade").html("")
             corUsada()
+			
         })
 
     $("#svg-holder").on("click", "rect", function(){
             $(this).css("fill", $("#selectedColor").val() )
             $(this).attr("colorname", $("#selectedColor").attr('colorname'))
+			$("#grade").html("")
             corUsada()
         })
     $("#svg-holder").on("click", "polygon", function(){
             $(this).css("fill", $("#selectedColor").val() )
             $(this).attr("colorname", $("#selectedColor").attr('colorname'))
+			$("#grade").html("")
             corUsada()
         })
     $("#svg-holder").on("click", "circle", function(){
             $(this).css("fill", $("#selectedColor").val() )
             $(this).attr("colorname", $("#selectedColor").attr('colorname'))
+			$("#grade").html("")
             corUsada()
         })
     $("#svg-holder").on("click", "polyline", function(){
             $(this).css("fill", $("#selectedColor").val() )
             $(this).attr("colorname", $("#selectedColor").attr('colorname'))
+			$("#grade").html("")
             corUsada()
         })
 
@@ -349,7 +364,6 @@ var e3d, info3d;
 		var tile = svg;
 		var tile_w = (100/cols)-1;
 		var tela = window.screen.width;
-		console.log(tela)
 		if (tela <= 600){
 			var tile_w = (100/cols)-1;
 		}
@@ -487,7 +501,7 @@ var e3d, info3d;
 
 		e3d.info = {
 			sala: {
-				file:'http://127.0.0.1:5500/assets/imagens3d/sala.png',
+				file:'https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/imagens3d/sala.png',
 				w: 1200,
 				h: 1200,
 				cols: 20,
@@ -496,7 +510,7 @@ var e3d, info3d;
 				coords: {"topLeft":{"x":-0.14266666666666666,"y":0.5},"topRight":{"x":1.109,"y":0.5},"bottomLeft":{"x":-0.6226666666666667,"y":1.23},"bottomRight":{"x":1.619,"y":1.23}},
 			},
 			cozinha: {
-				file:'http://127.0.0.1:5500/assets/imagens3d/cozinha-chao.png',
+				file:'https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/imagens3d/cozinha-chao.png',
 				w: 1200,
 				h: 1200,
 				cols: 20,
@@ -505,7 +519,7 @@ var e3d, info3d;
 				coords: {"topLeft":{"x":-0.21399983333333333,"y":0.76},"topRight":{"x":0.6776666666666668,"y":0.2999975},"bottomLeft":{"x":0.316,"y":1.5775},"bottomRight":{"x":1.4226666666666667,"y":0.7225}}
 			},
 			banheiro: {
-				file:'http://127.0.0.1:5500/assets/imagens3d/banheiro.png',
+				file:'https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/imagens3d/banheiro.png',
 				w: 1200,
 				h: 1200,
 				cols: 20,
@@ -514,7 +528,7 @@ var e3d, info3d;
 				coords: {"topLeft":{"x":-0.14266666666666666,"y":0.5},"topRight":{"x":1.109,"y":0.5},"bottomLeft":{"x":-0.6226666666666667,"y":1.23},"bottomRight":{"x":1.619,"y":1.23}}
 			},
 			externa: {
-				file:'http://127.0.0.1:5500/assets/imagens3d/externa.png',
+				file:'https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/imagens3d/externa.png',
 				w: 1008,
 				h: 540,
 				cols: 17,
@@ -523,7 +537,7 @@ var e3d, info3d;
 				coords: {"topLeft":{"x":-0.14266666666666666,"y":0.5},"topRight":{"x":1.109,"y":0.5},"bottomLeft":{"x":-0.6226666666666667,"y":1.23},"bottomRight":{"x":1.619,"y":1.23}}
 			},
 			parede: {
-				file:'http://127.0.0.1:5500/assets/imagens3d/cozinha-parede.png',
+				file:'https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/imagens3d/cozinha-parede.png',
 				w: 1200,
 				h: 1200,
 				cols: 15,
