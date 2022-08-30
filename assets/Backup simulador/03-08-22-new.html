@@ -1,0 +1,897 @@
+<input type="hidden" id="selectedColor" name="selectedColor" value="black" colorName="Preto" />
+<div id="simulador" class="container sim-loaded">
+
+    <div class="headline">
+        <h4>Simulador</h4>
+       <h2>Crie seu ladrilho customizado</h2> 
+       <div class="instrucoes">
+           <h5 style="text-align: left;">Passo-a-passo:</h5>
+            <p><strong>1º.</strong>&nbsp;<strong>Escolha um modelo</strong> de ladrilho para customizar.</p>
+            <p><strong>2º.</strong>&nbsp;<strong>Clique em uma cor</strong> para deixá-la selecionada e,<strong> clique nas áreas do ladrilho</strong> que deseja aplicar a cor. Após a customização, role a página e clique em “<strong>Aplicar Ladrilho</strong>” para ver o ladrilho aplicado em uma imagem.</p>
+            <p><strong>3º.</strong> Quando terminar, você pode clicar no botão para <strong>salvar ou imprimir</strong>&nbsp;seu ladrilho customizado. O navegador irá abrir uma janela com a possibilidade de salvar o arquivo em PDF ou enviá-lo para sua impressora.</p>
+            
+        </div>
+    </div>
+
+    <div class="select">
+
+
+        <!-- Quando clicar troca a classe para active no botão, e nos ladrilhos -->
+        <div class="select-filter">
+            <button data-id="todos" class="active">Todos</button>
+            <button data-id="centrais" class="">Centrais</button>
+            <button data-id="classico" class="">Clássicos</button>
+            <button data-id="faixas" class="">Faixas</button>
+            <button data-id="florais" class="">Florais</button>
+            <button data-id="geometricos" class="">Geométricos</button>
+            <button data-id="hexagonais" class="">Hexagonais</button>
+            <button data-id="tozetos" class="">Tozetos</button>
+            <button data-id="vintages" class="">Vintages</button>
+            <button data-id="exclusivos" class="">Exclusivos</button>
+        </div>
+        
+        <div class="select-ladrilhos">
+            <div class="active" id="select-ladrilhos-centrais">
+                <h2>Centrais</h2>
+                <div class="select-ladrilhos-miniaturas">
+
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2014.svg" alt="2014" >
+                        <h5 class="nome-ladrilho">2014</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2018.svg" alt="2018" >
+                        <h5 class="nome-ladrilho">2018</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2019.svg" alt="2019" >
+                        <h5 class="nome-ladrilho">2019</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2021.svg" alt="2021" >
+                        <h5 class="nome-ladrilho">2021</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2023.svg" alt="2023" >
+                        <h5 class="nome-ladrilho">2023</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2026.svg" alt="2026" >
+                        <h5 class="nome-ladrilho">2026</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2075.svg" alt="2075" >
+                        <h5 class="nome-ladrilho">2075</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2076.svg" alt="2076" >
+                        <h5 class="nome-ladrilho">2076</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2083.svg" alt="2083" >
+                        <h5 class="nome-ladrilho">2083</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2097.svg" alt="2097" >
+                        <h5 class="nome-ladrilho">2097</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2107.svg" alt="2107" >
+                        <h5 class="nome-ladrilho">2107</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2124.svg" alt="2124" >
+                        <h5 class="nome-ladrilho">2124</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2133.svg" alt="2133" >
+                        <h5 class="nome-ladrilho">2133</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2140.svg" alt="2140" >
+                        <h5 class="nome-ladrilho">2140</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/2182.svg" alt="2182" >
+                        <h5 class="nome-ladrilho">2182</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/4068.svg" alt="4068" >
+                        <h5 class="nome-ladrilho">4068</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/4069.svg" alt="4069" >
+                        <h5 class="nome-ladrilho">4069</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/4085.svg" alt="4085" >
+                        <h5 class="nome-ladrilho">4085</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/4112.svg" alt="4112" >
+                        <h5 class="nome-ladrilho">4112</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/4135.svg" alt="4135" >
+                        <h5 class="nome-ladrilho">4135</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/4141.svg" alt="4141" type="normal" >
+                        <h5 class="nome-ladrilho">4141</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/4193.svg" alt="4193" >
+                        <h5 class="nome-ladrilho">4193</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/amalfi.svg" alt="5314" >
+                        <h5 class="nome-ladrilho">5314</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/andorinha.svg" alt="5315" >
+                        <h5 class="nome-ladrilho">5315</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/balao.svg"alt="5316" >
+                        <h5 class="nome-ladrilho">5316</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/central30.svg"alt="5318" >
+                        <h5 class="nome-ladrilho">5318</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/centro-arabe-2.svg"alt="5319" >
+                        <h5 class="nome-ladrilho">5319</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/contra-dama-4051.svg"alt="5320" type="normal">
+                        <h5 class="nome-ladrilho">5320</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/doma.svg"alt="5321" >
+                        <h5 class="nome-ladrilho">5321</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/estelar.svg" alt="5322">
+                        <h5 class="nome-ladrilho">5322</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/estrela-omar.svg" alt="5323">
+                        <h5 class="nome-ladrilho">5323</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/floral-tulipa.svg" alt="5324">
+                        <h5 class="nome-ladrilho">5324</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/gaivota.svg" alt="5325">
+                        <h5 class="nome-ladrilho">5325</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/gobeto.svg" alt="5326" type="normal">
+                        <h5 class="nome-ladrilho">5326</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/grama.svg" alt="5327" type="normal">
+                        <h5 class="nome-ladrilho">5327</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/linha.svg" alt="5328" type="normal">
+                        <h5 class="nome-ladrilho">5328</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/maia.svg" alt="5329" >
+                        <h5 class="nome-ladrilho">5329</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/meia-cara-composto.svg" alt="5330" type="normal">
+                        <h5 class="nome-ladrilho">5330</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/meia-cara.svg" alt="5331">
+                        <h5 class="nome-ladrilho">5331</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/raminho-filetado.svg" alt="5332">
+                        <h5 class="nome-ladrilho">5332</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/traco.svg" alt="5333" type="normal">
+                        <h5 class="nome-ladrilho">5333</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/x-simples.svg" alt="5335" type="normal">
+                        <h5 class="nome-ladrilho">5335</h5>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="active" id="select-ladrilhos-classico">
+                <h2>Clássicos</h2>
+                <div class="select-ladrilhos-miniaturas">
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/classico/d12.svg" alt="1212" >
+                        <h5 class="nome-ladrilho">1212</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/classico/d13.svg" alt="1313" >
+                        <h5 class="nome-ladrilho">1313</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/classico/d23.svg" alt="2323" >
+                        <h5 class="nome-ladrilho">2323</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/classico/d29.svg" alt="2929" >
+                        <h5 class="nome-ladrilho">2929</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="active" id="select-ladrilhos-faixas">
+                <h2>Faixas e Cantos</h2>
+                <div class="select-ladrilhos-miniaturas">
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/faixas/102.svg" alt="1020" type="faixa" >
+                        <h5 class="nome-ladrilho">1020</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/faixas/103.svg" alt="1030" type="faixa" >
+                        <h5 class="nome-ladrilho">1030</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/faixas/105.svg" alt="1050" type="faixa" >
+                        <h5 class="nome-ladrilho">1050</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/faixas/112.svg" alt="1120" type="faixa" >
+                        <h5 class="nome-ladrilho">1120</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/faixas/113.svg" alt="1130" type="faixa" >
+                        <h5 class="nome-ladrilho">1130</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/faixas/115.svg" alt="1150" type="faixa" >
+                        <h5 class="nome-ladrilho">1150</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/faixas/121.svg" alt="1210" type="faixa" >
+                        <h5 class="nome-ladrilho">1210</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/faixas/131.svg" alt="1310" type="faixa" >
+                        <h5 class="nome-ladrilho">1310</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/faixas/138.svg" alt="1380" type="faixa" >
+                        <h5 class="nome-ladrilho">1380</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/faixas/141.svg" alt="1410" type="faixa" >
+                        <h5 class="nome-ladrilho">1410</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/faixas/d01.svg" alt="0101" type="faixa" >
+                        <h5 class="nome-ladrilho">0101</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/faixas/d04.svg" alt="0404" type="faixa" >
+                        <h5 class="nome-ladrilho">0404</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/faixas/d07.svg" alt="0707" type="faixa" >
+                        <h5 class="nome-ladrilho">0707</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="active" id="select-ladrilhos-flores">
+                <h2>Flores</h2>
+                <div class="select-ladrilhos-miniaturas">
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/flores/3031.svg" alt="3031" >
+                        <h5 class="nome-ladrilho">3031</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/flores/3033.svg" alt="3033" >
+                        <h5 class="nome-ladrilho">3033</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/flores/3040.svg" alt="3040" >
+                        <h5 class="nome-ladrilho">3040</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/flores/3094.svg" alt="3094" >
+                        <h5 class="nome-ladrilho">3094</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/flores/3095.svg" alt="3095" >
+                        <h5 class="nome-ladrilho">3095</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/flores/3122.svg" alt="3122" >
+                        <h5 class="nome-ladrilho">3122</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/flores/3175.svg" alt="3175" >
+                        <h5 class="nome-ladrilho">3175</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/flores/3247.svg" alt="3247" >
+                        <h5 class="nome-ladrilho">3247</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/flores/3288.svg" alt="3288" >
+                        <h5 class="nome-ladrilho">3288</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/flores/4304.svg" alt="4304" >
+                        <h5 class="nome-ladrilho">4304</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/flores/d45.svg" alt="4545" >
+                        <h5 class="nome-ladrilho">4545</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/flores/flor-de-lotus.svg" alt="7980" >
+                        <h5 class="nome-ladrilho">7980</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="active" id="select-ladrilhos-geometrico">
+                <h2>Geométricos</h2>
+                <div class="select-ladrilhos-miniaturas">
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/geometrico/d61.svg" alt="6161" type="normal">
+                        <h5 class="nome-ladrilho">6161</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/geometrico/d65.svg" alt="6565" >
+                        <h5 class="nome-ladrilho">6565</h5>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="active" id="select-ladrilhos-hexagonal">
+                <h2>Hexagonais</h2>
+                <div class="select-ladrilhos-miniaturas">
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/hexagonal/catavento.svg" alt="7220" type="hexagonal">
+                        <h5 class="nome-ladrilho">7220</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/hexagonal/colmeia.svg" alt="7221" type="hexagonal">
+                        <h5 class="nome-ladrilho">7221</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/hexagonal/colmeia2.svg" alt="7222" type="hexagonal">
+                        <h5 class="nome-ladrilho">7222</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/centrais/mauricio-arruda-hexagonal.svg" alt="7230" type="hexagonal">
+                        <h5 class="nome-ladrilho">7230</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/hexagonal/diamante.svg" alt="7232" type="hexagonal" >
+                        <h5 class="nome-ladrilho">7232</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/hexagonal/estrela.svg" alt="7234" type="hexagonal" >
+                        <h5 class="nome-ladrilho">7234</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/hexagonal/face.svg" alt="7235" type="hexagonal" >
+                        <h5 class="nome-ladrilho">7235</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/hexagonal/folha.svg" alt="7236" type="hexagonal" >
+                        <h5 class="nome-ladrilho">7236</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/hexagonal/gobeto.svg" alt="7237" type="hexagonal" >
+                        <h5 class="nome-ladrilho">7237</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/hexagonal/netuno.svg" alt="7238" type="hexagonal" >
+                        <h5 class="nome-ladrilho">7238</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/hexagonal/sol.svg" alt="7239" type="hexagonal" >
+                        <h5 class="nome-ladrilho">7239</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1656.svg" alt="1656" type="hexagonal" >
+                        <h5 class="nome-ladrilho">1656</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1657.svg" alt="1657" type="hexagonal" >
+                        <h5 class="nome-ladrilho">1657</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1658.svg" alt="1658" type="hexagonal" >
+                        <h5 class="nome-ladrilho">1658</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1659.svg" alt="1659" type="hexagonal" >
+                        <h5 class="nome-ladrilho">1659</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/hexagonal/triangulo.svg" alt="1660" type="hexagonal" >
+                        <h5 class="nome-ladrilho">1660</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="active" id="select-ladrilhos-tozetos">
+                <h2>Tozetos</h2>
+                <div class="select-ladrilhos-miniaturas">
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/tozetos/flor1.svg" alt="1730" >
+                        <h5 class="nome-ladrilho">1730</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/tozetos/flor2.svg" alt="1731" >
+                        <h5 class="nome-ladrilho">1731</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/tozetos/flor4.svg" alt="1732" >
+                        <h5 class="nome-ladrilho">1732</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/tozetos/lomando.svg" alt="1733" >
+                        <h5 class="nome-ladrilho">1733</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/tozetos/tulipa.svg" alt="1734" >
+                        <h5 class="nome-ladrilho">1734</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="active" id="select-ladrilhos-vintage">
+                <h2>Vintage</h2>
+                <div class="select-ladrilhos-miniaturas">
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/vintage/d75.svg" alt="6122" type="normal">
+                        <h5 class="nome-ladrilho">6122</h5>
+                    </div>
+                </div>
+            </div>
+
+            <div class="active" id="select-ladrilhos-exclusivo">
+                <h2>Exclusivos</h2>
+                <div class="select-ladrilhos-miniaturas">
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1600.svg" alt="1600" type="normal">
+                        <h5 class="nome-ladrilho">1600</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1601.svg" alt="1601" type="normal">
+                        <h5 class="nome-ladrilho">1601</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1603.svg" alt="1603" type="normal">
+                        <h5 class="nome-ladrilho">1603</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1604.svg" alt="1604" >
+                        <h5 class="nome-ladrilho">1604</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1606.svg" alt="1606" >
+                        <h5 class="nome-ladrilho">1606</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1607.svg" alt="1607" type="normal">
+                        <h5 class="nome-ladrilho">1607</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1608.svg" alt="1608" >
+                        <h5 class="nome-ladrilho">1608</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1609.svg" alt="1609" >
+                        <h5 class="nome-ladrilho">1609</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1610.svg" alt="1610" >
+                        <h5 class="nome-ladrilho">1610</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1611.svg" alt="1611" >
+                        <h5 class="nome-ladrilho">1611</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1612.svg" alt="1612" type="normal">
+                        <h5 class="nome-ladrilho">1612</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1613.svg" alt="1613" >
+                        <h5 class="nome-ladrilho">1613</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1614.svg" alt="1614" type="normal">
+                        <h5 class="nome-ladrilho">1614</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1615.svg" alt="1615" type="normal">
+                        <h5 class="nome-ladrilho">1615</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1616.svg" alt="1616" >
+                        <h5 class="nome-ladrilho">1616</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1617.svg" alt="1617" >
+                        <h5 class="nome-ladrilho">1617</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1618.svg" alt="1618" >
+                        <h5 class="nome-ladrilho">1618</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1619.svg" alt="1619" >
+                        <h5 class="nome-ladrilho">1619</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1621.svg" alt="1621" >
+                        <h5 class="nome-ladrilho">1621</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1622.svg" alt="1622" >
+                        <h5 class="nome-ladrilho">1622</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1623.svg" alt="1623" >
+                        <h5 class="nome-ladrilho">1623</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1624.svg" alt="1624" >
+                        <h5 class="nome-ladrilho">1624</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1625.svg" alt="1625" >
+                        <h5 class="nome-ladrilho">1625</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1626.svg" alt="1626" >
+                        <h5 class="nome-ladrilho">1626</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1627.svg" alt="1627" >
+                        <h5 class="nome-ladrilho">1627</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1628.svg" alt="1628" >
+                        <h5 class="nome-ladrilho">1628</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1629.svg" alt="1629" >
+                        <h5 class="nome-ladrilho">1629</h5>
+                    </div>
+
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1630.svg" alt="1630" type="normal">
+                        <h5 class="nome-ladrilho">1630</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1631.svg" alt="1631" >
+                        <h5 class="nome-ladrilho">1631</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1632.svg" alt="1632" >
+                        <h5 class="nome-ladrilho">1632</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1635.svg" alt="1635" >
+                        <h5 class="nome-ladrilho">1635</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1639.svg" alt="1639" >
+                        <h5 class="nome-ladrilho">1639</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1640.svg" alt="1640" >
+                        <h5 class="nome-ladrilho">1640</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1641.svg" alt="1641" >
+                        <h5 class="nome-ladrilho">1641</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1642.svg" alt="1642" >
+                        <h5 class="nome-ladrilho">1642</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1643.svg" alt="1643" type="normal">
+                        <h5 class="nome-ladrilho">1643</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1644.svg" alt="1644" type="normal">
+                        <h5 class="nome-ladrilho">1644</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1645.svg" alt="1645" >
+                        <h5 class="nome-ladrilho">1645</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1647.svg" alt="1647" >
+                        <h5 class="nome-ladrilho">1647</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1648.svg" alt="1648" type="florao-espelhado">
+                        <h5 class="nome-ladrilho">1648</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1649.svg" alt="1649" >
+                        <h5 class="nome-ladrilho">1649</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1651.svg" alt="1651" >
+                        <h5 class="nome-ladrilho">1651</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1654.svg" alt="1654" >
+                        <h5 class="nome-ladrilho">1654</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1655.svg" alt="1655" >
+                        <h5 class="nome-ladrilho">1655</h5>
+                    </div>
+                    <div class="thumb-ladrilho">
+                        <img class="min-ladrilhos" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/images/ladrilhos/exclusivos/1661.svg" alt="1661" >
+                        <h5 class="nome-ladrilho">1661</h5>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="preview">
+        <div class="print">
+            <div id="ladrilho">
+                <div id="svg-holder" class="">
+                    <div id="preview-ladrilho">
+                        <div id="svg-primary"></div>
+                    </div>
+                </div>
+            </div>
+            <div id="nome-ladrilho"></div>
+            <hr style="border: 0.5px solid #e5e5e5; margin: 5px 0;">
+            <div id="nome-cor"></div>
+            <h6 style="color:#7e7e7e; font-size: 0.67em;">*Selecione até 6 cores por ladrilho.*</h6>
+            <button class="button-print"type="button" onclick="printSVG('preview-ladrilho')" value="Baixar Ladrilho" >Baixar Ladrilho</button>
+        </div>
+        <div id="preview-color">
+<div class="color">
+    <button class="picker" value="#51c9c1" color-name="Turquesa" style="background-color: #51c9c1;"></button>
+    <p class="color-name">Turquesa</p>
+</div>
+<div class="color">
+    <button class="picker" value="#8fbc3f" color-name="Verde Abacate" style="background-color: #8fbc3f;"></button>
+    <p class="color-name">Verde Abacate</p>
+</div>
+<div class="color">
+    <button class="picker" value="#20B2AA" color-name="Verde musgo" style="background-color: #20B2AA;"></button>
+    <p class="color-name">Verde musgo</p>
+</div>
+<div class="color">
+    <button class="picker" value="#5b634c" color-name="Verde 250" style="background-color: #5b634c;"></button>
+    <p class="color-name">Verde 250</p>
+</div>
+<div class="color">
+    <button class="picker" value="#36bf99" color-name="Verde 125" style="background-color: #36bf99;"></button>
+    <p class="color-name">Verde 125</p>
+</div>
+<div class="color">
+    <button class="picker" value="#b1d1a7" color-name="Verde Água" style="background-color: #b1d1a7;"></button>
+    <p class="color-name">Verde Água</p>
+</div>
+<div class="color">
+    <button class="picker" value="#40E0D0" color-name="Tiffany" style="background-color: #40E0D0;"></button>
+    <p class="color-name">Tiffany</p>
+</div>
+<div class="color">
+    <button class="picker" value="#91b2cc" color-name="Lilás" style="background-color: #91b2cc;"></button>
+    <p class="color-name">Lilás</p>
+</div>
+<div class="color">
+    <button class="picker" value="#e9e1f7" color-name="Violeta" style="background-color: #e9e1f7;"></button>
+    <p class="color-name">Violeta</p>
+</div>
+<div class="color">
+    <button class="picker" value="#d3ebf2" color-name="Azul Claro" style="background-color: #d3ebf2 ;"></button>
+    <p class="color-name">Azul Claro</p>
+</div>
+<div class="color">
+    <button class="picker" value="#b5f3f5" color-name="Azul Bebê" style="background-color: #b5f3f5;"></button>
+    <p class="color-name">Azul Bebê</p>
+</div>
+<div class="color">
+    <button class="picker" value="#56749c" color-name="Azul Tramar" style="background-color: #56749c;"></button>
+    <p class="color-name">Azul Tramar</p>
+</div>
+<div class="color">
+    <button class="picker" value="#4b71a3" color-name="Azul Royal" style="background-color: #4b71a3;"></button>
+    <p class="color-name">Azul Royal</p>
+</div>
+<div class="color">
+    <button class="picker" value="#3a5730" color-name="Azul Escuro" style="background-color: #3a5730;"></button>
+    <p class="color-name">Azul Escuro</p>
+</div>
+<div class="color">
+    <button class="picker" value="#47a196" color-name="Azul Petróleo" style="background-color: #47a196;"></button>
+    <p class="color-name">Azul Petróleo</p>
+</div>
+<div class="color">
+    <button class="picker" value="#819489" color-name="Alecrim" style="background-color: #819489;"></button>
+    <p class="color-name">Alecrim</p>
+</div>
+<div class="color">
+    <button class="picker" value="#d1a880" color-name="Nude" style="background-color: #d1a880;"></button>
+    <p class="color-name">Nude</p>
+</div>
+<div class="color">
+    <button class="picker" value="#946d46" color-name="Marrom" style="background-color: #946d46;"></button>
+    <p class="color-name">Marrom</p>
+</div>
+<div class="color">
+    <button class="picker" value="#f7e1c6" color-name="Kraft" style="background-color: #f7e1c6;"></button>
+    <p class="color-name">Kraft</p>
+</div>
+<div class="color">
+    <button class="picker" value="#a38764" color-name="Kraft Escuro" style="background-color: #a38764;"></button>
+    <p class="color-name">Kraft Escuro</p>
+</div>
+<div class="color">
+    <button class="picker" value="#d5b59c" color-name="Ouro Velho Escuro" style="background-color: #d5b59c;"></button>
+    <p class="color-name">Ouro Velho Escuro</p>
+</div>
+<div class="color">
+    <button class="picker" value="#ada04c" color-name="Ouro Velho" style="background-color: #ada04c;"></button>
+    <p class="color-name">Ouro Velho</p>
+</div>
+<div class="color">
+    <button class="picker" value="#a2b1b8" color-name="Nimbus" style="background-color: #a2b1b8;"></button>
+    <p class="color-name">Nimbus</p>
+</div>
+<div class="color">
+    <button class="picker" value="#523710" color-name="Café" style="background-color: #523710;"></button>
+    <p class="color-name">Café</p>
+</div>
+<div class="color">
+    <button class="picker" value="#c9c7bf" color-name="Fendi" style="background-color: #c9c7bf;"></button>
+    <p class="color-name">Fendi</p>
+</div>
+<div class="color">
+    <button class="picker" value="#000000" color-name="Preto" style="background-color: #000000;"></button>
+    <p class="color-name">Preto</p>
+</div>
+<div class="color">
+    <button class="picker" value="#918e8a" color-name="Cinza" style="background-color: #918e8a;"></button>
+    <p class="color-name">Cinza</p>
+</div>
+<div class="color">
+    <button class="picker" value="#5b5b58" color-name="Cinza Chumbo" style="background-color: #5b5b58;"></button>
+    <p class="color-name">Cinza Chumbo</p>
+</div>
+<div class="color">
+    <button class="picker" value="#b8b879" color-name="Cinza Claro" style="background-color: #b8b879;"></button>
+    <p class="color-name">Cinza Claro</p>
+</div>
+<div class="color">
+    <button class="picker" value="#a36d52" color-name="Terra Cota Escuro" style="background-color: #a36d52;"></button>
+    <p class="color-name">Terra Cota Escuro</p>
+</div>
+<div class="color">
+    <button class="picker" value="#d4914a" color-name="Terra Cota" style="background-color: #d4914a;"></button>
+    <p class="color-name">Terra Cota</p>
+</div>
+<div class="color">
+    <button class="picker" value="#d9a466" color-name="Terra Cota Claro" style="background-color: #d9a466;"></button>
+    <p class="color-name">Terra Cota Claro</p>
+</div>
+<div class="color">
+    <button class="picker" value="#f2b705" color-name="Mostarda" style="background-color: #f2b705;"></button>
+    <p class="color-name">Mostarda</p>
+</div>
+<div class="color">
+    <button class="picker" value="#fcda68" color-name="Amarelo" style="background-color: #fcda68;"></button>
+    <p class="color-name">Amarelo</p>
+</div>
+<div class="color">
+    <button class="picker" value="#f7da7c" color-name="Amarelo Claro" style="background-color: #f7da7c;"></button>
+    <p class="color-name">Amarelo Claro</p>
+</div>
+<div class="color">
+    <button class="picker" value="#f7f3d2" color-name="Areia" style="background-color: #f7f3d2;"></button>
+    <p class="color-name">Areia</p>
+</div>
+<div class="color">
+    <button class="picker" value="#ffffff" color-name="Branco" style="background-color: #ffffff;"></button>
+    <p class="color-name">Branco</p>
+</div>
+<div class="color">
+    <button class="picker" value="#b88a8a" color-name="Roxo" style="background-color: #b88a8a;"></button>
+    <p class="color-name">Roxo</p>
+</div>
+<div class="color">
+    <button class="picker" value="#750707" color-name="Vermelho Vivo" style="background-color: #750707;"></button>
+    <p class="color-name">Vermelho Vivo</p>
+</div>
+<div class="color">
+    <button class="picker" value="#ad382d " color-name="Vermelho" style="background-color: #ad382d ;"></button>
+    <p class="color-name">Vermelho</p>
+</div>
+<div class="color">
+    <button class="picker" value="#ff7f50" color-name="Goiaba" style="background-color: #ff7f50;"></button>
+    <p class="color-name">Goiaba</p>
+</div>
+<div class="color">
+    <button class="picker" value="#ba7979" color-name="Rosa Escuro" style="background-color: #ba7979;"></button>
+    <p class="color-name">Rosa Escuro</p>
+</div>
+<div class="color">
+    <button class="picker" value="#d9a7a7" color-name="Rosa" style="background-color: #d9a7a7;"></button>
+    <p class="color-name">Rosa</p>
+</div>
+<div class="color">
+    <button class="picker" value="#f7c8c8" color-name="Rosa Claro" style="background-color: #f7c8c8;"></button>
+    <p class="color-name">Rosa Claro</p>
+</div>
+        </div>
+    </div>
+
+    <div id="visualizar">
+        <div class="area-preview vc_column_container vc_col-sm-8">
+            <div id="grade" class="grade" data-cols="9" data-rows="4" style="background-color: #dddddd;">
+                <div class="tile-row tile-row-0 first-row">
+                    <div class="item tile-col tile-col-0 first-col" style="width: 11.11111111111111%; padding: 1px;">
+                        <div class="holder">
+                        </div>
+                    </div>
+                </div>
+                <div class="mask">
+
+                </div>
+            </div>
+        </div>
+        <div class="area-options">
+            <h3>Opções de visualização</h3>
+            <form id="preview-options-form">
+                <p><label>Colunas:</label> 
+                <input id="option-cols" type="number" min="1" max="10" step="1" value="4"></p>
+                <p><label>Linhas:</label> 
+                <input id="option-rows" type="number" min="1" max="10" step="1" value="4"></p>
+                <p class="p-submit"><input type="submit" value="Visualizar" class="sc_button_hover_slide_left"></p>
+              </form>
+        </div>
+    </div>
+
+    <div id="ladrilar-3d" class="ladrilar-3d">
+        <h3 class="title-3d"><span>Simulação 3d</span></h3>
+        <p>Escolha um dos ambientes para visualizar seu ladrilho em uma simulação 3D.</p>
+        <ul class="ladrilar-3d__selectors">
+          <li><button type="button" value="sala" class="sc_button_hover_slide_left">Sala</button></li>
+          <li><button type="button" value="banheiro" class="sc_button_hover_slide_left">Banheiro</button></li>
+          <li><button type="button" value="cozinha" class="sc_button_hover_slide_left">Cozinha</button></li>
+          <li><button type="button" value="parede" class="sc_button_hover_slide_left">Parede</button></li>
+          <li><button type="button" value="externa" class="sc_button_hover_slide_left">Externa</button></li>
+        </ul>
+        <div id="ladrilar-3d-display" style="display: none;" class="tipo-undefined">
+          <div class="ladrilar-3d__holder">
+            <div class="ladrilar-3d__image"></div>
+            <div class="ladrilar-3d__ladrilhos"><div class="grade" data-cols="20" data-rows="16" style="background-color: rgb(68, 85, 77); transform: matrix3d(0.991573, -0.358645, 0, 0.000270979, 0.94778, 0.469852, 0, -0.000617973, 0, 0, 1, 0, 47.1684, 145.464, 0, 1);"></div></div>
+          </div>
+        </div><!-- ladrilar 3d display -->
+      </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/js/fancybox.min.js" id="fancyapps-js"></script>
+<script src="https://www.piastrellaladrilhos.com.br/wp-content/themes/twentytwenty/assets/js/simulador.js"></script>
